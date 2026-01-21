@@ -70,34 +70,6 @@ Modify colors in [`tailwind.config.ts`](tailwind.config.ts)
 
 ---
 
-## 📚 Full Documentation
-
-For detailed guides, see:
-
-- **[📖 DOCS_INDEX.md](DOCS_INDEX.md)** - Complete documentation index
-- **[🎯 PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md)** - Complete project overview
-- **[⚙️ SETUP.md](SETUP.md)** - Detailed setup instructions
-- **[🏗️ ARCHITECTURE.md](ARCHITECTURE.md)** - Technical architecture
-- **[🎨 DESIGN_GUIDE.md](DESIGN_GUIDE.md)** - Visual design system
-- **[🚢 DEPLOYMENT.md](DEPLOYMENT.md)** - Deployment guide
-
----
-
-## 🚢 Deployment
-
-### Deploy to Vercel (Recommended)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
-
-Or using the CLI:
-```bash
-npm i -g vercel
-vercel
-```
-
-See [DEPLOYMENT.md](DEPLOYMENT.md) for full deployment guide.
-
----
 
 ## 🛠️ Built With
 
