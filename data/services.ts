@@ -42,12 +42,12 @@ const services: Service[] = [
       "Integrating authentication, databases, storage, and APIs using cloud platforms like Firebase, AWS, and Google Cloud.",
   },
   {
-    id: "prototyping",
-    icon: "shield",
-    title: "Prototyping & Iteration",
-    description:
-      "Rapidly building prototypes and MVPs, testing ideas, and refining based on feedback and real usage.",
-  },
+  id: "quality-assurance",
+  icon: "shield",
+  title: "Quality Assurance & Validation",
+  description:
+    "Reviewing, testing, and validating work to ensure reliability, clarity, and readiness before release.",
+},
 ];
 
 export default services;

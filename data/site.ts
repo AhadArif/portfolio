@@ -37,7 +37,7 @@ const siteData: SiteData = {
   stats: {
     yearsExperience: 2,
     recognitions: 6,
-    projects: 5,
+    projects: 10,
   },
 };
 
