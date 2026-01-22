@@ -9,11 +9,10 @@ export default function Experience() {
             Career
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Work Experience
+            Work <span className="text-blue-600 dark:text-blue-400">Experience</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            My journey in web development and design through internships and
-            projects.
+            My professional journey through impactful roles and projects.
           </p>
         </div>
 
@@ -21,11 +20,11 @@ export default function Experience() {
           {experience.map((exp) => (
             <div
               key={exp.id}
-              className="bg-white dark:bg-gray-900 p-8 rounded-xl hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+              className="bg-white dark:bg-gray-900 p-8 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-xl transition-all duration-300 group"
             >
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                 <div className="flex items-start space-x-4 mb-4 sm:mb-0">
-                  <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500/10 to-purple-500/10 dark:from-blue-500/20 dark:to-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 border border-blue-200 dark:border-blue-700">
                     <svg
                       className="w-6 h-6 text-blue-600 dark:text-blue-400"
                       fill="none"
@@ -42,14 +41,14 @@ export default function Experience() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">
-                      {exp.company}
+                      {exp.position}
                     </h3>
                     <p className="text-blue-600 dark:text-blue-400 font-medium">
-                      {exp.position}
+                      {exp.company}
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-400 text-sm">
+                <div className="flex items-center text-gray-500 dark:text-gray-400 text-sm whitespace-nowrap">
                   <svg
                     className="w-4 h-4 mr-1"
                     fill="none"
@@ -66,14 +65,14 @@ export default function Experience() {
                   {exp.period}
                 </div>
               </div>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
+              <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
                 {exp.description}
               </p>
               <div className="flex flex-wrap gap-2">
                 {exp.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full"
+                    className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full border border-gray-200 dark:border-gray-700"
                   >
                     {tag}
                   </span>

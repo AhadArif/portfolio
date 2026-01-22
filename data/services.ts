@@ -7,46 +7,46 @@ export interface Service {
 
 const services: Service[] = [
   {
-    id: "web-dev",
-    icon: "code",
-    title: "Web Development",
-    description:
-      "Building responsive websites and web apps with modern frameworks, ensuring high performance and scalability.",
-  },
-  {
     id: "ui-ux",
     icon: "palette",
-    title: "UI/UX Design",
+    title: "Product Design & UI/UX",
     description:
-      "Creating intuitive and engaging user interfaces with a focus on user experience and modern design principles.",
+      "Designing clean, user-focused interfaces and layout systems using Figma and modern UX principles.",
   },
   {
-    id: "mobile-dev",
-    icon: "smartphone",
-    title: "Mobile Development",
+    id: "frontend",
+    icon: "code",
+    title: "Frontend Engineering",
     description:
-      "Developing native and cross-platform mobile applications for iOS and Android with seamless user experiences.",
+      "Building responsive, interactive interfaces with React, VUE, Next.js, and modern frontend tools.",
+  },
+  {
+    id: "web-dev",
+    icon: "smartphone",
+    title: "Full Website Development",
+    description:
+      "Developing complete websites from structure and styling to logic and deployment.",
   },
   {
     id: "performance",
     icon: "zap",
-    title: "Performance Optimization",
+    title: "Performance, SEO & Content Optimization",
     description:
-      "Optimizing web apps and sites for speed, accessibility, and SEO to ensure the best possible user experience.",
+      "Improving site speed, search visibility, accessibility, and content structure for better reach and engagement.",
   },
   {
-    id: "backend",
+    id: "cloud",
     icon: "server",
-    title: "Backend Development",
+    title: "Cloud-Connected Web Applications",
     description:
-      "Building robust and scalable server-side applications with modern backend technologies and cloud services.",
+      "Integrating authentication, databases, storage, and APIs using cloud platforms like Firebase, AWS, and Google Cloud.",
   },
   {
-    id: "testing",
+    id: "prototyping",
     icon: "shield",
-    title: "Security & Testing",
+    title: "Prototyping & Iteration",
     description:
-      "Implementing comprehensive security measures and testing strategies to ensure reliable and secure applications.",
+      "Rapidly building prototypes and MVPs, testing ideas, and refining based on feedback and real usage.",
   },
 ];
 

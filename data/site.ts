@@ -14,30 +14,30 @@ export interface SiteData {
   };
   stats: {
     yearsExperience: number;
-    happyClients: number;
+    recognitions: number;
     projects: number;
   };
 }
 
 const siteData: SiteData = {
-  name: "Alex Morgan",
+  name: "Abdul Ahad Arif",
   title: "Creative Developer + Designer",
   subtitle: "I'm a Developer creating beautiful, scalable digital experiences",
   description:
     "I transform complex problems into simple, beautiful and intuitive designs. When I'm not coding or designing, I play games and do what I love. I have been doing web design and development for over 15 years, while constantly learning to improve my techniques and developing new skills that will help me realize any of your ideas.",
-  email: "alex_morgan@email.com",
-  phone: "+1 (123) 456-4880",
-  location: "San Francisco, CA",
+  email: "ahad01arif@gmail.com",
+  phone: "+91",
+  location: "Bangalore, India",
   social: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
-    dribbble: "https://dribbble.com",
+    github: "https://github.com/AhadArif",
+    linkedin: "https://www.linkedin.com/in/ahad-arif-b1b832262 ",
+    twitter: "https://x.com/Ahad95arif",
+    dribbble: "https://dribbble.com/ahad-arif",
   },
   stats: {
-    yearsExperience: 1,
-    happyClients: 15,
-    projects: 3,
+    yearsExperience: 2,
+    recognitions: 6,
+    projects: 5,
   },
 };
 

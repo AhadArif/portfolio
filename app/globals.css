@@ -29,7 +29,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+/* Custom gradient scrollbar for dark mode */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -39,9 +39,99 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gray-400 dark:bg-gray-600 rounded-full;
+  @apply bg-gray-400 rounded-full;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3b82f6, #8b5cf6);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-gray-500 dark:bg-gray-500;
+  @apply bg-gray-500;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #60a5fa, #a78bfa);
+}
+
+/* Smooth transitions for interactive elements */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom selection color */
+::selection {
+  @apply bg-blue-200 text-gray-900;
+}
+
+.dark ::selection {
+  @apply bg-blue-900/30 text-white;
+}
+
+/* Subtle background gradient pulse animation */
+@keyframes gradient-pulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Gentle bounce animation for icon */
+@keyframes gentle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Background gradient pulse animation for sections */
+@keyframes background-gradient-pulse {
+  0%, 100% {
+    background-position: 0% 50%;
+    opacity: 0.4;
+  }
+  50% {
+    background-position: 100% 50%;
+    opacity: 0.6;
+  }
+}
+
+/* Utility classes for animations */
+.animate-gradient-pulse {
+  animation: gradient-pulse 8s ease-in-out infinite;
+}
+
+.animate-gentle-bounce {
+  animation: gentle-bounce 2s ease-in-out infinite;
+}
+
+.animate-background-pulse {
+  animation: background-gradient-pulse 10s ease-in-out infinite;
+}
+
+/* Hover effects for contact cards */
+.contact-card-hover {
+  transition: all 0.3s ease;
+}
+
+.contact-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+  border-color: rgba(59, 130, 246, 0.6);
+}
+
+/* Hover effect for send message button */
+.send-message-hover {
+  transition: all 0.3s ease;
+}
+
+.send-message-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.5), 0 0 50px rgba(139, 92, 246, 0.3);
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
 }

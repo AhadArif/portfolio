@@ -42,11 +42,10 @@ export default function Services() {
             Services
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            What I Do
+            What I <span className="text-blue-600 dark:text-blue-400">Do</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            I offer a comprehensive range of services to bring your digital vision to life,
-            from design to deployment.
+            I offer a comprehensive range of services to bring your digital vision to life.
           </p>
         </div>
 
@@ -54,7 +53,7 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-white dark:bg-gray-900 p-8 rounded-xl hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+              className="bg-white dark:bg-gray-900 p-8 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-xl transition-all duration-300 group"
             >
               <div className="text-blue-600 dark:text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-300">
                 {iconMap[service.icon]}
@@ -62,7 +61,7 @@ export default function Services() {
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                 {service.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 {service.description}
               </p>
             </div>
