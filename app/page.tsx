@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
@@ -49,13 +50,18 @@ export default function Home() {
   if (currentView === 'blog-list') {
     return (
       <>
-        <main>
+        <Navbar 
+          onNavigateHome={backToHome} 
+          onNavigateToBlog={showBlogList}
+          currentView={currentView}
+        />
+        <main className="pt-16">
           <BlogList
             onViewPost={showBlogPost}
             onBackToHome={backToHome}
           />
         </main>
-        <Footer />
+        <Footer onNavigateHome={backToHome} currentView={currentView} />
       </>
     );
   }
@@ -63,14 +69,19 @@ export default function Home() {
   if (currentView === 'blog-post' && selectedPostId !== null) {
     return (
       <>
-        <main>
+        <Navbar 
+          onNavigateHome={backToHome} 
+          onNavigateToBlog={backToBlog}
+          currentView={currentView}
+        />
+        <main className="pt-16">
           <BlogPost
             postId={selectedPostId}
             onBackToBlog={backToBlog}
             onViewPost={showBlogPost}
           />
         </main>
-        <Footer />
+        <Footer onNavigateHome={backToHome} currentView={currentView} />
       </>
     );
   }
@@ -78,6 +89,11 @@ export default function Home() {
   // Default home view with blog section
   return (
     <>
+      <Navbar 
+        onNavigateHome={backToHome} 
+        onNavigateToBlog={showBlogList}
+        currentView={currentView}
+      />
       <main>
         <Hero />
         <About />
@@ -88,7 +104,7 @@ export default function Home() {
         <CTA />
         <Contact />
       </main>
-      <Footer />
+      <Footer onNavigateHome={backToHome} currentView={currentView} />
     </>
   );
 }

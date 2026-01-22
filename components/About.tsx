@@ -2,16 +2,16 @@ import siteData from "@/data/site";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-900">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <p className="text-blue-600 dark:text-blue-400 font-medium mb-2">
+        <div className="mb-16">
+          <p className="inline-block bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 text-blue-700 dark:text-blue-400 px-4 py-1 rounded-full text-sm mb-4 backdrop-blur-sm border border-blue-200 dark:border-blue-800">
             About Me
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl text-gray-900 dark:text-white mb-6">
             Passionate About Creating
             <br />
-            Digital <span className="text-blue-600 dark:text-blue-400">Excellence</span>
+            Digital <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Excellence</span>
           </h2>
         </div>
 

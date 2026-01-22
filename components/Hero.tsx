@@ -22,18 +22,18 @@ export default function Hero() {
               {siteData.title}
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl text-gray-900 dark:text-white">
               Hi, I'm{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400">
                 {siteData.name}
               </span>
             </h1>
             
-            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-300">
               {siteData.subtitle}
             </p>
             
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400">
               I specialize in building exceptional websites, applications, and digital products that make a difference. As a passionate developer, I'm eager to learn and contribute to meaningful projects.
             </p>
 
@@ -60,7 +60,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4 pt-4">
               <a
                 href="#portfolio"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105 font-medium"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 View My Work
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
@@ -69,7 +69,7 @@ export default function Hero() {
               </a>
               <a
                 href="#contact"
-                className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white px-8 py-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 hover:border-blue-600 dark:hover:border-blue-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 font-medium"
+                className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white px-8 py-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 hover:border-blue-600 dark:hover:border-blue-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 Contact Me
               </a>
@@ -97,7 +97,7 @@ export default function Hero() {
             <div className="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 backdrop-blur-sm">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Available to work</span>
+                <span className="text-sm text-gray-700 dark:text-gray-300">Available to work</span>
               </div>
             </div>
           </div>

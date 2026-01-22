@@ -22,7 +22,7 @@ const blogs: BlogPost[] = [
     id: 1,
     title: "Building Scalable Web Applications with Next.js",
     excerpt: "Learn how to build high-performance, scalable web applications using Next.js and modern development practices.",
-    category: "Web Development",
+    category: "Tech",
     date: "January 15, 2026",
     readTime: "8 min read",
     image: "/images/hero-image.jpg",
@@ -84,7 +84,7 @@ const blogs: BlogPost[] = [
     id: 3,
     title: "TypeScript Best Practices for Large Scale Applications",
     excerpt: "Essential TypeScript patterns and practices for building maintainable, type-safe applications at scale.",
-    category: "Programming",
+    category: "Tech",
     date: "January 5, 2026",
     readTime: "10 min read",
     image: "/images/hero-image.jpg",
@@ -115,7 +115,7 @@ const blogs: BlogPost[] = [
     id: 4,
     title: "Modern State Management: Redux vs. Zustand vs. Jotai",
     excerpt: "A comprehensive comparison of modern state management solutions and when to use each one.",
-    category: "Web Development",
+    category: "Insights",
     date: "December 28, 2025",
     readTime: "7 min read",
     image: "/images/hero-image.jpg",
@@ -177,7 +177,7 @@ const blogs: BlogPost[] = [
     id: 6,
     title: "Optimizing React Performance: Advanced Techniques",
     excerpt: "Advanced React performance optimization techniques for building lightning-fast user interfaces.",
-    category: "Programming",
+    category: "Tech",
     date: "December 15, 2025",
     readTime: "11 min read",
     image: "/images/hero-image.jpg",
@@ -202,6 +202,130 @@ const blogs: BlogPost[] = [
         "Improved user satisfaction scores by 45%"
       ],
       conclusion: "React performance optimization is both an art and a science. The key is measuring before optimizing, focusing on real bottlenecks, and choosing the right technique for each problem. By combining profiler-driven development with architectural best practices, we can build React applications that feel instant, regardless of complexity."
+    }
+  },
+  {
+    id: 7,
+    title: "Building a Student Management System for Campus",
+    excerpt: "Led a team of 5 students to develop a comprehensive management system that streamlined academic processes and improved student experience.",
+    category: "Achievements",
+    date: "December 15, 2025",
+    readTime: "5 min read",
+    image: "/images/hero-image.jpg",
+    tags: ["React", "Node.js", "Team Project"],
+    author: "Abdul Ahad Arif",
+    content: {
+      introduction: "During my senior year, I had the opportunity to lead a team of five talented developers in building a comprehensive student management system for our campus. This project was more than just code—it was about solving real problems and making a tangible impact on student life.",
+      challenge: "Our university's existing systems were fragmented across multiple platforms. Students had to navigate different portals for attendance, grades, course registration, and fee payments. Faculty struggled with manual attendance tracking and grade management. The administration lacked a unified view of student data, making reporting time-consuming and error-prone.",
+      approach: [
+        "Conducted extensive user research with students, faculty, and admin staff",
+        "Designed a unified dashboard with role-based access control",
+        "Implemented real-time attendance tracking with QR code integration",
+        "Built an automated notification system for important updates",
+        "Created analytics dashboards for administration",
+        "Deployed on AWS with CI/CD pipeline for continuous updates"
+      ],
+      results: [
+        "Reduced administrative workload by 60% through automation",
+        "Increased student engagement with 85% daily active users",
+        "Improved attendance tracking accuracy to 99%",
+        "Decreased course registration time from 2 hours to 10 minutes",
+        "System now used by 5,000+ students and 200+ faculty members"
+      ],
+      conclusion: "Leading this project taught me invaluable lessons about teamwork, stakeholder management, and building solutions that truly matter. Seeing students and faculty use our system daily makes all the late nights and challenges worthwhile. It's proof that technology can make a real difference when built with users in mind."
+    }
+  },
+  {
+    id: 8,
+    title: "Winning the University Hackathon: Innovation Under Pressure",
+    excerpt: "How my team built an AI-powered study companion in 24 hours and won first place against 50 competing teams.",
+    category: "Achievements",
+    date: "November 20, 2025",
+    readTime: "6 min read",
+    image: "/images/hero-image.jpg",
+    tags: ["Hackathon", "AI", "Innovation"],
+    author: "Abdul Ahad Arif",
+    content: {
+      introduction: "Hackathons are intense, exhausting, and absolutely exhilarating. In November 2025, my team participated in our university's biggest hackathon with 50 teams competing. We had 24 hours to build something innovative. Here's the story of how we won first place with an AI-powered study companion.",
+      challenge: "Students struggle with information overload and ineffective study methods. Traditional note-taking apps don't adapt to individual learning styles. Existing AI tools are generic and don't understand academic context. We had just 24 hours to build a solution that was both innovative and functional enough to impress judges.",
+      approach: [
+        "Brainstormed and validated idea in first 2 hours",
+        "Divided team into frontend, backend, and AI integration",
+        "Integrated OpenAI API for intelligent question generation",
+        "Built spaced repetition algorithm for optimal review timing",
+        "Created clean, intuitive UI focused on user experience",
+        "Prepared compelling demo and presentation"
+      ],
+      results: [
+        "Built fully functional MVP in 22 hours",
+        "Won first place against 50 competing teams",
+        "Received $5,000 prize and mentorship opportunities",
+        "Featured in university newsletter and local tech news",
+        "Currently developing into full product with 500+ beta users"
+      ],
+      conclusion: "This hackathon victory validated our approach to problem-solving and teamwork. More importantly, it showed that with the right mindset, clear communication, and focused execution, you can achieve remarkable things in a short time. The connections made and lessons learned during those intense 24 hours continue to benefit us today."
+    }
+  },
+  {
+    id: 9,
+    title: "The Future of Web Development: Trends to Watch in 2026",
+    excerpt: "Exploring emerging trends and technologies that will shape the future of web development and how to prepare for them.",
+    category: "Insights",
+    date: "January 20, 2026",
+    readTime: "8 min read",
+    image: "/images/hero-image.jpg",
+    tags: ["Trends", "Future", "Web Dev"],
+    author: "Abdul Ahad Arif",
+    content: {
+      introduction: "Web development evolves at breakneck speed. What's cutting-edge today becomes mainstream tomorrow. As we progress through 2026, several trends are reshaping how we build web applications. Understanding these trends isn't just about staying current—it's about anticipating where the industry is heading and positioning yourself accordingly.",
+      challenge: "Developers face constant pressure to learn new technologies while maintaining existing systems. Companies struggle to choose between adopting bleeding-edge tech and maintaining stable, proven solutions. The challenge is distinguishing genuine innovations from passing fads, and understanding which trends will have lasting impact versus which will fade away.",
+      approach: [
+        "Analyzed adoption rates of emerging technologies across major companies",
+        "Surveyed developer communities to understand pain points and needs",
+        "Evaluated performance benchmarks and real-world case studies",
+        "Experimented hands-on with trending frameworks and tools",
+        "Consulted with industry leaders and early adopters",
+        "Identified patterns in technology evolution and market demands"
+      ],
+      results: [
+        "Identified 5 key trends with highest adoption potential",
+        "Server Components adoption growing 300% year-over-year",
+        "Edge computing reducing latency by 70% in tested applications",
+        "AI-assisted development increasing productivity by 40%",
+        "Web Assembly enabling near-native performance in browsers"
+      ],
+      conclusion: "The future of web development is exciting and full of opportunities. Server Components, Edge Computing, AI Integration, Web Assembly, and Progressive Enhancement are not just buzzwords—they're reshaping how we build web applications. The key is strategic adoption: understand the fundamentals, experiment with new technologies, but always prioritize solving real problems over chasing trends."
+    }
+  },
+  {
+    id: 10,
+    title: "Lessons Learned from Building 50+ Projects",
+    excerpt: "Insights and wisdom gained from building dozens of projects, from failures to successes, and everything in between.",
+    category: "Insights",
+    date: "November 10, 2025",
+    readTime: "10 min read",
+    image: "/images/hero-image.jpg",
+    tags: ["Career", "Learning", "Experience"],
+    author: "Abdul Ahad Arif",
+    content: {
+      introduction: "Over the past few years, I've built more than 50 projects—from small side projects to large-scale applications serving thousands of users. Some succeeded beyond expectations, others failed spectacularly, but each taught me something valuable. These are the lessons I wish I'd known from the start.",
+      challenge: "Early in my career, I made countless mistakes: over-engineering simple solutions, under-estimating project complexity, ignoring user feedback, and chasing perfection over progress. I struggled with impostor syndrome, burnout, and the overwhelming feeling of never knowing enough. Every developer faces these challenges, but not everyone learns from them effectively.",
+      approach: [
+        "Maintained a learning journal documenting successes and failures",
+        "Sought feedback from users, mentors, and peer developers",
+        "Analyzed what made successful projects work versus failures",
+        "Experimented with different development methodologies",
+        "Built in public to learn from community feedback",
+        "Focused on shipping projects rather than endless planning"
+      ],
+      results: [
+        "Project completion rate improved from 30% to 85%",
+        "Reduced development time by 60% through better planning",
+        "Increased user satisfaction scores consistently above 4.5/5",
+        "Built diverse portfolio demonstrating range and expertise",
+        "Developed mentorship relationships that accelerated growth"
+      ],
+      conclusion: "Building 50+ projects taught me that success isn't about writing perfect code—it's about solving real problems, learning from failures, and continuously improving. Start small, ship fast, gather feedback, and iterate. Don't fear failure; embrace it as your best teacher. Most importantly, build things that matter to you, because passion is what sustains you through the inevitable challenges."
     }
   }
 ];

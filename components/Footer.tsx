@@ -1,7 +1,25 @@
 import siteData from "@/data/site";
 
-export default function Footer() {
+interface FooterProps {
+  onNavigateHome?: () => void;
+  currentView?: 'home' | 'blog-list' | 'blog-post';
+}
+
+export default function Footer({ onNavigateHome, currentView = 'home' }: FooterProps = {}) {
   const currentYear = new Date().getFullYear();
+
+  const handleSectionClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    if (currentView !== 'home' && onNavigateHome) {
+      e.preventDefault();
+      onNavigateHome();
+      setTimeout(() => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  };
 
   return (
     <footer className="bg-gray-900 dark:bg-black text-white py-16">
@@ -36,25 +54,25 @@ export default function Footer() {
             </div>
             <ul className="space-y-3">
               <li>
-                <a href="#about" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2 group">
+                <a href="#about" onClick={(e) => handleSectionClick(e, 'about')} className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2 group cursor-pointer">
                   <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-blue-400 transition-colors"></span>
                   About Me
                 </a>
               </li>
               <li>
-                <a href="#portfolio" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2 group">
+                <a href="#portfolio" onClick={(e) => handleSectionClick(e, 'portfolio')} className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2 group cursor-pointer">
                   <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-blue-400 transition-colors"></span>
                   My Work
                 </a>
               </li>
               <li>
-                <a href="#experience" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2 group">
+                <a href="#experience" onClick={(e) => handleSectionClick(e, 'experience')} className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2 group cursor-pointer">
                   <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-blue-400 transition-colors"></span>
                   Experience
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2 group">
+                <a href="#contact" onClick={(e) => handleSectionClick(e, 'contact')} className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2 group cursor-pointer">
                   <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-blue-400 transition-colors"></span>
                   Contact
                 </a>
