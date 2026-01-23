@@ -98,4 +98,4 @@ Give a ⭐️ if this project helped you!
 
 ---
 
-**Built with ❤️ using Next.js and Tailwind CSS**
+**Built with ❤️ by Abdul Ahad using Next.js and Tailwind CSS**
