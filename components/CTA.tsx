@@ -77,7 +77,7 @@ export default function CTA() {
               <div className="text-white/80 text-sm sm:text-base">Year Learning</div>
             </div>
             <div className="backdrop-blur-sm bg-white/10 p-6 sm:p-8 rounded-xl border border-white/20 shadow-xl hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl sm:text-5xl font-bold text-white mb-2 drop-shadow-lg">15+</div>
+              <div className="text-4xl sm:text-5xl font-bold text-white mb-2 drop-shadow-lg">10+</div>
               <div className="text-white/80 text-sm sm:text-base">Projects Built</div>
             </div>
             <div className="backdrop-blur-sm bg-white/10 p-6 sm:p-8 rounded-xl border border-white/20 shadow-xl hover:scale-105 transition-transform duration-300">

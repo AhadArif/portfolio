@@ -62,7 +62,7 @@ export default function BlogList({ onViewPost, onBackToHome, initialCategory = "
     : blogs.filter(blog => blog.category === selectedCategory);
 
   return (
-    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30 dark:from-gray-900 dark:via-blue-900/10 dark:to-purple-900/10 relative overflow-hidden">
+    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 -left-32 w-96 h-96 bg-blue-300/20 dark:bg-blue-600/10 rounded-full blur-3xl"></div>
@@ -103,7 +103,7 @@ export default function BlogList({ onViewPost, onBackToHome, initialCategory = "
               className={`px-6 py-2.5 rounded-full transition-all duration-300 border-2 font-medium backdrop-blur-sm shadow-sm hover:shadow-lg transform hover:scale-105 ${
                 selectedCategory === cat.name
                   ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white border-transparent shadow-lg scale-105'
-                  : 'bg-white/50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400'
+                  : 'bg-white dark:bg-gray-800/50 text-gray-900 dark:text-gray-300 border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400'
               }`}
             >
               <span>{cat.name}</span>

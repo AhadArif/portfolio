@@ -33,7 +33,9 @@ export default function Footer({ onNavigateHome, currentView = 'home' }: FooterP
             </p>
             <div className="flex items-center gap-2 text-sm text-gray-400 mb-3">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span>Available for opportunities</span>
+              <span>Currently Working
+                    Open to future opportunities
+              </span>
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-400">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
@@ -101,7 +103,7 @@ export default function Footer({ onNavigateHome, currentView = 'home' }: FooterP
                   </div>
                   <div>
                     <div className="text-sm text-gray-400">GitHub</div>
-                    <div className="text-sm text-white">@alexmorgan</div>
+                    <div className="text-sm text-white">@AhadArif</div>
                   </div>
                 </a>
               )}
@@ -119,7 +121,7 @@ export default function Footer({ onNavigateHome, currentView = 'home' }: FooterP
                   </div>
                   <div>
                     <div className="text-sm text-gray-400">LinkedIn</div>
-                    <div className="text-sm text-white">Alex Morgan</div>
+                    <div className="text-sm text-white">AhadArif</div>
                   </div>
                 </a>
               )}
@@ -137,7 +139,7 @@ export default function Footer({ onNavigateHome, currentView = 'home' }: FooterP
                   </div>
                   <div>
                     <div className="text-sm text-gray-400">Twitter</div>
-                    <div className="text-sm text-white">@alexcodes</div>
+                    <div className="text-sm text-white">@Ahad95Arif</div>
                   </div>
                 </a>
               )}

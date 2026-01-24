@@ -20,312 +20,268 @@ export interface BlogPost {
 const blogs: BlogPost[] = [
   {
     id: 1,
-    title: "Building Scalable Web Applications with Next.js",
-    excerpt: "Learn how to build high-performance, scalable web applications using Next.js and modern development practices.",
-    category: "Tech",
-    date: "January 15, 2026",
-    readTime: "8 min read",
-    image: "/images/hero-image.jpg",
-    tags: ["Next.js", "React", "Performance"],
+    title: "Building My Portfolio: How One Project Sparked Creativity and a New Beginning",
+    excerpt: "How creating my portfolio pushed me to explore new ideas, design freely, and start something of my own.",
+    category: "Achievements",
+    date: "January 12, 2026",
+    readTime: "5 min read",
+    image: "/images/blog-1.png",
+    tags: ["Portfolio", "Creativity", "Learning"],
     author: "Abdul Ahad Arif",
     content: {
-      introduction: "Next.js has revolutionized how we build modern web applications. In this comprehensive guide, I'll share my experience building scalable applications that serve thousands of users daily. We'll explore best practices, performance optimization techniques, and architectural decisions that make a real difference.",
-      challenge: "When building web applications at scale, developers face several critical challenges: slow initial page loads, poor SEO performance, complex state management, and difficulty maintaining code quality as the project grows. Traditional client-side rendering approaches often fall short when dealing with these issues, leading to poor user experiences and decreased conversion rates.",
+      introduction: "This portfolio project was more than just a website — it became the starting point of a new creative phase for me. While building it using TypeScript, JavaScript, and CSS, I began experimenting more freely with layouts, interactions, and ideas that I had never tried before.",
+      challenge: "Initially, I struggled with finding the right balance between design and functionality. I wanted the portfolio to feel personal, clean, and expressive, without becoming too complex or overly technical.",
       approach: [
-        "Implemented Server-Side Rendering (SSR) for dynamic content to improve initial load times and SEO",
-        "Utilized Incremental Static Regeneration (ISR) for pages that don't change frequently",
-        "Set up API routes for backend functionality, reducing the need for a separate backend server",
-        "Implemented code splitting and lazy loading to reduce bundle sizes",
-        "Used React Server Components for better performance and smaller client bundles",
-        "Configured proper caching strategies with revalidation periods"
+        "Planned the layout with simplicity and clarity in mind",
+        "Experimented with small animations and subtle interactions",
+        "Used TypeScript for structure and JavaScript for dynamic behavior",
+        "Refined styles using clean and minimal CSS patterns",
+        "Iterated continuously based on how the site felt, not just how it looked"
       ],
       results: [
-        "Reduced initial page load time by 65% through SSR and code splitting",
-        "Improved SEO ranking with server-rendered content and meta tags",
-        "Decreased bundle size by 40% using dynamic imports and tree shaking",
-        "Achieved 95+ scores on all Lighthouse metrics",
-        "Reduced server costs by 30% through efficient caching strategies"
+        "Developed a portfolio that reflects both skills and personality",
+        "Gained confidence experimenting with creative layouts",
+        "Discovered a strong interest in personal branding through design",
+        "Started exploring new side projects inspired by this experience"
       ],
-      conclusion: "Next.js provides an excellent foundation for building scalable web applications. By leveraging its built-in features like SSR, ISR, and API routes, we can create applications that are fast, SEO-friendly, and maintainable. The key is understanding when to use each rendering strategy and optimizing for your specific use case."
+      conclusion: "This project gave me the confidence to trust my creative instincts. It not only strengthened my technical foundation but also sparked an urge to start new ideas and build things that feel meaningful. It marked the beginning of a more confident and creative approach to my work."
     }
   },
+
   {
     id: 2,
-    title: "Mastering Tailwind CSS: From Basics to Advanced",
-    excerpt: "A deep dive into Tailwind CSS, exploring advanced techniques and best practices for building beautiful user interfaces.",
+    title: "Designing with AI: How Ideation Tools Transformed My Creative Process",
+    excerpt: "Using AI, Pinterest, and visual references to create better design posts and creative content.",
     category: "Design",
-    date: "January 10, 2026",
-    readTime: "6 min read",
-    image: "/images/hero-image.jpg",
-    tags: ["Tailwind CSS", "UI/UX", "CSS"],
+    date: "January 8, 2026",
+    readTime: "5 min read",
+    image: "/images/blog-2.png",
+    tags: ["AI", "Design", "Creativity"],
     author: "Abdul Ahad Arif",
     content: {
-      introduction: "Tailwind CSS has transformed the way developers approach styling. Moving from traditional CSS or CSS-in-JS solutions to Tailwind requires a mindset shift, but the benefits are substantial. In this article, I'll share advanced techniques and patterns I've developed over years of using Tailwind in production applications.",
-      challenge: "Traditional CSS approaches often lead to bloated stylesheets, naming conflicts, and maintenance nightmares. CSS-in-JS solutions add runtime overhead and complexity. Teams struggle with consistency, and developers waste time writing custom CSS for common patterns. The challenge was finding a styling solution that promotes consistency while maintaining flexibility and performance.",
+      introduction: "Design inspiration can come from anywhere — but recently, AI tools have become an important part of my creative workflow. Along with platforms like Pinterest and curated references, AI has helped me explore ideas faster and more confidently.",
+      challenge: "Finding fresh ideas consistently is not easy. Creative blocks, limited references, and time constraints often slow down the process, especially when creating design posts and visual content regularly.",
       approach: [
-        "Established a custom design system using Tailwind's configuration",
-        "Created reusable component patterns with @apply for complex styles",
-        "Implemented custom utility classes for project-specific needs",
-        "Used JIT (Just-In-Time) compiler for optimal performance",
-        "Set up proper responsive design patterns with mobile-first approach",
-        "Integrated with CSS variables for dynamic theming"
+        "Used AI tools mainly for ideation and concept exploration",
+        "Combined AI outputs with Pinterest boards and visual references",
+        "Refined layouts manually to maintain originality",
+        "Focused on using AI as a creative assistant, not a replacement",
+        "Iterated on typography, spacing, and composition"
       ],
       results: [
-        "Reduced CSS bundle size by 70% using PurgeCSS",
-        "Achieved 100% design consistency across the application",
-        "Decreased development time by 50% for new features",
-        "Improved collaboration between designers and developers",
-        "Eliminated CSS naming conflicts and specificity issues"
+        "Improved consistency in design output",
+        "Reduced time spent on early ideation phases",
+        "Developed a more experimental design style",
+        "Created more engaging and visually balanced posts"
       ],
-      conclusion: "Tailwind CSS is more than just a utility-first framework—it's a design system that promotes consistency and productivity. By mastering its advanced features and establishing proper patterns, teams can build beautiful, maintainable applications faster than ever before."
+      conclusion: "AI became a valuable creative partner rather than a shortcut. It helped me think faster, explore more ideas, and refine concepts better. This experience strengthened my design process and made creativity feel more accessible and enjoyable."
     }
   },
+
   {
     id: 3,
-    title: "TypeScript Best Practices for Large Scale Applications",
-    excerpt: "Essential TypeScript patterns and practices for building maintainable, type-safe applications at scale.",
-    category: "Tech",
-    date: "January 5, 2026",
-    readTime: "10 min read",
-    image: "/images/hero-image.jpg",
-    tags: ["TypeScript", "JavaScript", "Best Practices"],
-    author: "Abdul Ahad Arif",
-    content: {
-      introduction: "TypeScript has become the de facto standard for large-scale JavaScript applications. However, simply adding types to your code isn't enough—you need to understand advanced TypeScript features and patterns to truly leverage its power. This guide covers the practices I've refined while working on enterprise applications serving millions of users.",
-      challenge: "JavaScript's dynamic nature makes it difficult to maintain large codebases. As applications grow, bugs become harder to catch, refactoring becomes risky, and onboarding new developers takes longer. Type safety is crucial, but improper TypeScript usage can lead to complex type gymnastics, any types everywhere, and type definitions that don't match runtime behavior.",
-      approach: [
-        "Implemented strict TypeScript configuration with no implicit any",
-        "Used utility types (Partial, Pick, Omit) for type transformations",
-        "Created branded types for domain-specific values",
-        "Leveraged conditional types and mapped types for advanced patterns",
-        "Established consistent patterns for API response typing",
-        "Integrated with Zod for runtime validation matching TypeScript types"
-      ],
-      results: [
-        "Caught 90% of bugs during development before runtime",
-        "Reduced production bugs by 60% through type safety",
-        "Improved IDE autocomplete and developer experience",
-        "Decreased onboarding time for new developers by 40%",
-        "Made refactoring safer and faster with confidence"
-      ],
-      conclusion: "TypeScript is an investment that pays dividends in large applications. By following best practices, using advanced features appropriately, and maintaining strict type safety, teams can build robust applications with confidence. The key is striking the right balance between type safety and pragmatism."
-    }
+    title: "How AI Content Influenced Hardware Prices: My Observation on SSD Market Trends",
+excerpt: "Exploring how viral AI videos in mid-January triggered a sharp spike in SSD and RAM prices.",
+category: "Tech",
+date: "January 25, 2026",
+readTime: "6 min read",
+image: "/images/blog-3.png",
+tags: ["Hardware", "AI", "Market Trends"],
+author: "Abdul Ahad Arif",
+content: {
+introduction: "In mid-January, while casually searching for an SSD upgrade, I noticed a sudden spike in 1TB SSD and RAM prices over just ten days. Prices jumped from around ₹13,000 to over ₹20,000, coinciding with a surge of viral AI content online.",
+challenge: "Hardware prices usually change gradually, but this rapid increase left many buyers, including myself, puzzled since there was no official supply shortage.",
+approach: [
+"Monitored prices daily across multiple online stores",
+"Tracked trending AI-related videos and social media content",
+"Observed discussions and recommendations from influencers",
+"Noted user sentiment and buying patterns in forums and comments"
+],
+results: [],
+conclusion: "This observation revealed how quickly digital content can influence real-world tech markets. It highlighted the growing power of online trends in shaping consumer behavior and pricing dynamics."
+}
   },
+
   {
     id: 4,
-    title: "Modern State Management: Redux vs. Zustand vs. Jotai",
-    excerpt: "A comprehensive comparison of modern state management solutions and when to use each one.",
+    title: "Learning SEO Through Practice: How Optimization Can Drive Real Growth",
+    excerpt: "What SEO taught me and how it can help websites and businesses grow steadily over time.",
     category: "Insights",
-    date: "December 28, 2025",
-    readTime: "7 min read",
-    image: "/images/hero-image.jpg",
-    tags: ["State Management", "React", "Redux"],
+    date: "January 2, 2026",
+    readTime: "6 min read",
+    image: "/images/blog-4.png",
+    tags: ["SEO", "Growth", "Digital Strategy"],
     author: "Abdul Ahad Arif",
     content: {
-      introduction: "State management is one of the most critical decisions in React applications. The ecosystem has evolved significantly, offering various solutions from Redux to newer alternatives like Zustand and Jotai. In this article, I'll compare these libraries based on real-world usage in production applications, helping you choose the right tool for your needs.",
-      challenge: "Managing application state effectively is challenging. Redux introduces significant boilerplate and complexity. Context API causes unnecessary re-renders. Local component state leads to prop drilling. Each application has different requirements—some need DevTools, time-travel debugging, and middleware, while others just need simple global state. Choosing the wrong solution can impact both developer experience and application performance.",
+      introduction: "My journey into SEO began as a curiosity and soon became one of the most valuable learning experiences in my web development path. Understanding how search engines work changed the way I approach content and structure.",
+      challenge: "Many websites struggle to gain visibility despite good design and content. Without proper optimization, even well-built sites remain unnoticed, limiting their growth potential.",
       approach: [
-        "Evaluated Redux Toolkit for complex applications with debugging needs",
-        "Tested Zustand for simpler state management with minimal boilerplate",
-        "Explored Jotai for atomic state management and granular updates",
-        "Benchmarked performance with different state update patterns",
-        "Assessed developer experience, learning curve, and ecosystem",
-        "Implemented hybrid approaches using multiple solutions together"
+        "Learned keyword research and search intent basics",
+        "Optimized page structure and metadata",
+        "Improved internal linking and content clarity",
+        "Tracked rankings and performance regularly",
+        "Refined strategy based on real results"
       ],
-      results: [
-        "Reduced boilerplate code by 70% using Zustand over traditional Redux",
-        "Improved re-render performance by 45% with Jotai's atomic approach",
-        "Decreased bundle size by 60% with lightweight alternatives",
-        "Maintained debugging capabilities where needed with Redux DevTools",
-        "Improved developer satisfaction and productivity"
-      ],
-      conclusion: "There's no one-size-fits-all solution for state management. Redux excels in large applications requiring debugging and middleware. Zustand offers the best balance of simplicity and power for most applications. Jotai shines when you need granular, atomic state updates. Choose based on your specific requirements, team expertise, and application complexity."
+      results: [],
+      conclusion: "SEO taught me patience, strategy, and long-term thinking. It showed how small, consistent improvements can compound into meaningful growth for both websites and businesses."
     }
   },
+
   {
     id: 5,
-    title: "Building Accessible Web Applications: A Practical Guide",
-    excerpt: "Learn how to build web applications that are accessible to everyone, with practical examples and best practices.",
+    title: "Essential Design Tools I Rely On for Creative Work",
+    excerpt: "A look at the tools that shape my design workflow — from ideation to final visuals.",
     category: "Design",
-    date: "December 20, 2025",
-    readTime: "9 min read",
-    image: "/images/hero-image.jpg",
-    tags: ["Accessibility", "a11y", "Web Standards"],
+    date: "December 22, 2025",
+    readTime: "5 min read",
+    image: "/images/blog-5.png",
+    tags: ["Figma", "Canva", "Gemini", "Design Tools"],
     author: "Abdul Ahad Arif",
     content: {
-      introduction: "Web accessibility isn't just a legal requirement—it's a moral imperative and good business practice. Yet, many developers struggle to implement accessibility correctly. In this guide, I'll share practical approaches to building accessible applications based on WCAG 2.1 guidelines and real-world testing with assistive technologies.",
-      challenge: "Building truly accessible applications is more complex than adding alt text and ARIA labels. Developers face challenges with keyboard navigation, screen reader compatibility, color contrast, focus management, and semantic HTML. Many accessibility issues are discovered late in development or after launch, making fixes expensive. Testing with real assistive technologies is often skipped due to lack of knowledge or resources.",
+      introduction: "Great design is often powered by great tools. Over time, I’ve built a small but effective toolkit that helps me move smoothly from ideas to polished visuals.",
+      challenge: "With so many tools available, choosing the right ones without overcomplicating the workflow can be difficult.",
       approach: [
-        "Established semantic HTML structure as the foundation",
-        "Implemented proper keyboard navigation with visible focus indicators",
-        "Used ARIA labels and roles only when semantic HTML isn't sufficient",
-        "Ensured minimum 4.5:1 color contrast ratios for text",
-        "Tested with NVDA, JAWS, and VoiceOver screen readers",
-        "Integrated automated accessibility testing in CI/CD pipeline"
+        "Used Figma for layout and interface design",
+        "Used Canva for quick social visuals",
+        "Explored Gemini for creative ideation",
+        "Tested Framer for interactive prototypes",
+        "Built a workflow focused on speed and clarity"
       ],
       results: [
-        "Achieved WCAG 2.1 Level AA compliance across all pages",
-        "Reduced accessibility violations by 95% through automated testing",
-        "Improved keyboard navigation efficiency by 60%",
-        "Increased user base by reaching users with disabilities",
-        "Avoided potential legal issues and improved brand reputation"
+        "Faster design iterations",
+        "More consistent visual quality",
+        "Better idea-to-design conversion",
+        "Improved creative confidence"
       ],
-      conclusion: "Accessibility should be built in from the start, not bolted on at the end. By following web standards, using semantic HTML, and testing with real assistive technologies, we can create applications that work for everyone. The investment in accessibility pays off through increased reach, better SEO, and improved user experience for all users."
+      conclusion: "These tools simplified my creative process and helped me focus more on ideas than execution. Choosing the right tools made design more enjoyable and productive."
     }
   },
+
   {
     id: 6,
-    title: "Optimizing React Performance: Advanced Techniques",
-    excerpt: "Advanced React performance optimization techniques for building lightning-fast user interfaces.",
+    title: "Building a Smart Irrigation System: Solar Tracking and IoT in Action",
+    excerpt: "A hands-on project combining solar tracking, IoT sensors, and automation for efficient irrigation.",
     category: "Tech",
-    date: "December 15, 2025",
-    readTime: "11 min read",
-    image: "/images/hero-image.jpg",
-    tags: ["React", "Performance", "Optimization"],
+    date: "December 10, 2025",
+    readTime: "7 min read",
+    image: "/images/blog-6.png",
+    tags: ["IoT", "Solar", "Automation"],
     author: "Abdul Ahad Arif",
     content: {
-      introduction: "React makes it easy to build interactive UIs, but poor performance can ruin user experience. In this comprehensive guide, I'll share advanced optimization techniques I've used to transform sluggish applications into lightning-fast experiences. We'll go beyond basic memoization to explore profiler-driven optimization, virtualization, and architectural patterns that make a real difference.",
-      challenge: "React applications often suffer from performance issues as they scale. Unnecessary re-renders, large component trees, heavy computations, and inefficient data fetching can all contribute to poor performance. Simple solutions like wrapping everything in React.memo don't work—they can even make things worse. The challenge is identifying real performance bottlenecks and applying targeted optimizations without over-engineering.",
+      introduction: "This project focused on building a solar tracking IoT-based smart irrigation system that adapts to sunlight and soil conditions. It was a practical blend of electronics, automation, and sustainability.",
+      challenge: "Efficient water usage and energy optimization are major challenges in agriculture. Designing a system that tracks sunlight and waters crops intelligently required careful integration of hardware and sensors.",
       approach: [
-        "Used React Profiler to identify actual performance bottlenecks",
-        "Implemented virtualization for long lists with react-window",
-        "Optimized context providers to prevent unnecessary re-renders",
-        "Used useMemo and useCallback strategically, not everywhere",
-        "Implemented code splitting at route and component levels",
-        "Moved expensive computations to Web Workers"
+        "Used servo motors to rotate solar panels toward sunlight",
+        "Stored energy in rechargeable lithium-ion batteries",
+        "Displayed temperature readings on LED displays",
+        "Used soil moisture sensors to control the water pump",
+        "Automated watering when soil was dry and stopped when wet"
       ],
       results: [
-        "Reduced render time by 80% for complex list components",
-        "Improved interaction responsiveness by 70% through optimization",
-        "Decreased memory usage by 50% with proper cleanup",
-        "Achieved consistent 60fps for animations and interactions",
-        "Improved user satisfaction scores by 45%"
+        "Built a fully functional solar tracking mechanism",
+        "Achieved automated irrigation based on real sensor data",
+        "Improved energy efficiency through sunlight tracking",
+        "Gained strong practical IoT experience"
       ],
-      conclusion: "React performance optimization is both an art and a science. The key is measuring before optimizing, focusing on real bottlenecks, and choosing the right technique for each problem. By combining profiler-driven development with architectural best practices, we can build React applications that feel instant, regardless of complexity."
+      conclusion: "This project strengthened my understanding of real-world automation systems. It showed how technology can directly improve sustainability and efficiency when applied thoughtfully."
     }
   },
+
   {
     id: 7,
-    title: "Building a Student Management System for Campus",
-    excerpt: "Led a team of 5 students to develop a comprehensive management system that streamlined academic processes and improved student experience.",
+    title: "Boosting SMARTCHEM 2026 Visibility: How Strategic SEO Drove Results Before the Conference",
+    excerpt: "A behind-the-scenes look at how focused SEO efforts helped SMARTCHEM 2026 gain strong online visibility ahead of the event.",
     category: "Achievements",
-    date: "December 15, 2025",
-    readTime: "5 min read",
-    image: "/images/hero-image.jpg",
-    tags: ["React", "Node.js", "Team Project"],
+    date: "January 15, 2026",
+    readTime: "6 min read",
+    image: "/images/blog-7.png",
+    tags: ["SEO", "Event Marketing", "Growth"],
     author: "Abdul Ahad Arif",
     content: {
-      introduction: "During my senior year, I had the opportunity to lead a team of five talented developers in building a comprehensive student management system for our campus. This project was more than just code—it was about solving real problems and making a tangible impact on student life.",
-      challenge: "Our university's existing systems were fragmented across multiple platforms. Students had to navigate different portals for attendance, grades, course registration, and fee payments. Faculty struggled with manual attendance tracking and grade management. The administration lacked a unified view of student data, making reporting time-consuming and error-prone.",
+      introduction: "In October 2025, my teammate and I began working on the digital presence of SMARTCHEM 2026 with a clear goal: improve its online visibility before the conference season peaked.",
+      challenge: "The website had limited visibility and a short time window to rank before peak registrations began.",
       approach: [
-        "Conducted extensive user research with students, faculty, and admin staff",
-        "Designed a unified dashboard with role-based access control",
-        "Implemented real-time attendance tracking with QR code integration",
-        "Built an automated notification system for important updates",
-        "Created analytics dashboards for administration",
-        "Deployed on AWS with CI/CD pipeline for continuous updates"
+        "Performed keyword research",
+        "Optimized core pages and metadata",
+        "Improved internal linking",
+        "Enhanced performance and mobile usability",
+        "Tracked progress weekly"
       ],
       results: [
-        "Reduced administrative workload by 60% through automation",
-        "Increased student engagement with 85% daily active users",
-        "Improved attendance tracking accuracy to 99%",
-        "Decreased course registration time from 2 hours to 10 minutes",
-        "System now used by 5,000+ students and 200+ faculty members"
+        "Strong organic traffic growth by December",
+        "Multiple pages ranking on first page",
+        "Higher engagement and visibility",
+        "Positive recognition for our contribution"
       ],
-      conclusion: "Leading this project taught me invaluable lessons about teamwork, stakeholder management, and building solutions that truly matter. Seeing students and faculty use our system daily makes all the late nights and challenges worthwhile. It's proof that technology can make a real difference when built with users in mind."
+      conclusion: "This experience boosted both my confidence and belief in strategic digital growth. Seeing our work recognized and produce real impact motivated me to take on bigger challenges with clarity and assurance."
     }
   },
+
   {
     id: 8,
-    title: "Winning the University Hackathon: Innovation Under Pressure",
-    excerpt: "How my team built an AI-powered study companion in 24 hours and won first place against 50 competing teams.",
+    title: "Creating Eatopia: AI‑Powered Restaurant Discovery for Every Mood",
+    excerpt: "How I built Eatopia, a smart social restaurant discovery platform using AI and mood-based recommendations.",
     category: "Achievements",
-    date: "November 20, 2025",
-    readTime: "6 min read",
-    image: "/images/hero-image.jpg",
-    tags: ["Hackathon", "AI", "Innovation"],
+    date: "December 5, 2025",
+    readTime: "7 min read",
+    image: "/images/blog-8.png",
+    tags: ["AI", "Startup", "Web App"],
     author: "Abdul Ahad Arif",
     content: {
-      introduction: "Hackathons are intense, exhausting, and absolutely exhilarating. In November 2025, my team participated in our university's biggest hackathon with 50 teams competing. We had 24 hours to build something innovative. Here's the story of how we won first place with an AI-powered study companion.",
-      challenge: "Students struggle with information overload and ineffective study methods. Traditional note-taking apps don't adapt to individual learning styles. Existing AI tools are generic and don't understand academic context. We had just 24 hours to build a solution that was both innovative and functional enough to impress judges.",
+      introduction: "Eatopia began as an idea to simplify how people discover restaurants based on mood, group type, and vibe. It later grew into a full web project using AI-assisted recommendations.",
+      challenge: "Traditional food discovery platforms often ignore social context and mood, making recommendations feel generic and impersonal.",
       approach: [
-        "Brainstormed and validated idea in first 2 hours",
-        "Divided team into frontend, backend, and AI integration",
-        "Integrated OpenAI API for intelligent question generation",
-        "Built spaced repetition algorithm for optimal review timing",
-        "Created clean, intuitive UI focused on user experience",
-        "Prepared compelling demo and presentation"
+        "Designed mood and group-based filters",
+        "Integrated smart recommendation logic",
+        "Built a clean UI for fast discovery",
+        "Connected real restaurant data",
+        "Tested flows for social sharing"
       ],
       results: [
-        "Built fully functional MVP in 22 hours",
-        "Won first place against 50 competing teams",
-        "Received $5,000 prize and mentorship opportunities",
-        "Featured in university newsletter and local tech news",
-        "Currently developing into full product with 500+ beta users"
+        "Launched a working MVP",
+        "Improved discovery accuracy through filters",
+        "Received positive feedback from early users",
+        "Strengthened product design thinking"
       ],
-      conclusion: "This hackathon victory validated our approach to problem-solving and teamwork. More importantly, it showed that with the right mindset, clear communication, and focused execution, you can achieve remarkable things in a short time. The connections made and lessons learned during those intense 24 hours continue to benefit us today."
+      conclusion: "Eatopia taught me how product ideas become real platforms. It strengthened my confidence in building full experiences that blend design, logic, and user needs together."
     }
   },
+
   {
     id: 9,
-    title: "The Future of Web Development: Trends to Watch in 2026",
-    excerpt: "Exploring emerging trends and technologies that will shape the future of web development and how to prepare for them.",
+    title: "Coming Soon",
+    excerpt: "New insights and experiences are on the way.",
     category: "Insights",
-    date: "January 20, 2026",
-    readTime: "8 min read",
-    image: "/images/hero-image.jpg",
-    tags: ["Trends", "Future", "Web Dev"],
+    date: "Coming Soon",
+    readTime: "—",
+    image: "/images/blog-9.png",
+    tags: [],
     author: "Abdul Ahad Arif",
     content: {
-      introduction: "Web development evolves at breakneck speed. What's cutting-edge today becomes mainstream tomorrow. As we progress through 2026, several trends are reshaping how we build web applications. Understanding these trends isn't just about staying current—it's about anticipating where the industry is heading and positioning yourself accordingly.",
-      challenge: "Developers face constant pressure to learn new technologies while maintaining existing systems. Companies struggle to choose between adopting bleeding-edge tech and maintaining stable, proven solutions. The challenge is distinguishing genuine innovations from passing fads, and understanding which trends will have lasting impact versus which will fade away.",
-      approach: [
-        "Analyzed adoption rates of emerging technologies across major companies",
-        "Surveyed developer communities to understand pain points and needs",
-        "Evaluated performance benchmarks and real-world case studies",
-        "Experimented hands-on with trending frameworks and tools",
-        "Consulted with industry leaders and early adopters",
-        "Identified patterns in technology evolution and market demands"
-      ],
-      results: [
-        "Identified 5 key trends with highest adoption potential",
-        "Server Components adoption growing 300% year-over-year",
-        "Edge computing reducing latency by 70% in tested applications",
-        "AI-assisted development increasing productivity by 40%",
-        "Web Assembly enabling near-native performance in browsers"
-      ],
-      conclusion: "The future of web development is exciting and full of opportunities. Server Components, Edge Computing, AI Integration, Web Assembly, and Progressive Enhancement are not just buzzwords—they're reshaping how we build web applications. The key is strategic adoption: understand the fundamentals, experiment with new technologies, but always prioritize solving real problems over chasing trends."
+      introduction: "A new story will be shared here soon.",
+      challenge: "—",
+      approach: [],
+      results: [],
+      conclusion: "Stay tuned for upcoming content."
     }
   },
+
   {
     id: 10,
-    title: "Lessons Learned from Building 50+ Projects",
-    excerpt: "Insights and wisdom gained from building dozens of projects, from failures to successes, and everything in between.",
+    title: "Coming Soon",
+    excerpt: "More projects and reflections will be added shortly.",
     category: "Insights",
-    date: "November 10, 2025",
-    readTime: "10 min read",
-    image: "/images/hero-image.jpg",
-    tags: ["Career", "Learning", "Experience"],
+    date: "Coming Soon",
+    readTime: "—",
+    image: "/images/blog-10.png",
+    tags: [],
     author: "Abdul Ahad Arif",
     content: {
-      introduction: "Over the past few years, I've built more than 50 projects—from small side projects to large-scale applications serving thousands of users. Some succeeded beyond expectations, others failed spectacularly, but each taught me something valuable. These are the lessons I wish I'd known from the start.",
-      challenge: "Early in my career, I made countless mistakes: over-engineering simple solutions, under-estimating project complexity, ignoring user feedback, and chasing perfection over progress. I struggled with impostor syndrome, burnout, and the overwhelming feeling of never knowing enough. Every developer faces these challenges, but not everyone learns from them effectively.",
-      approach: [
-        "Maintained a learning journal documenting successes and failures",
-        "Sought feedback from users, mentors, and peer developers",
-        "Analyzed what made successful projects work versus failures",
-        "Experimented with different development methodologies",
-        "Built in public to learn from community feedback",
-        "Focused on shipping projects rather than endless planning"
-      ],
-      results: [
-        "Project completion rate improved from 30% to 85%",
-        "Reduced development time by 60% through better planning",
-        "Increased user satisfaction scores consistently above 4.5/5",
-        "Built diverse portfolio demonstrating range and expertise",
-        "Developed mentorship relationships that accelerated growth"
-      ],
-      conclusion: "Building 50+ projects taught me that success isn't about writing perfect code—it's about solving real problems, learning from failures, and continuously improving. Start small, ship fast, gather feedback, and iterate. Don't fear failure; embrace it as your best teacher. Most importantly, build things that matter to you, because passion is what sustains you through the inevitable challenges."
+      introduction: "Another upcoming post will appear here soon.",
+      challenge: "—",
+      approach: [],
+      results: [],
+      conclusion: "More updates coming soon."
     }
   }
 ];

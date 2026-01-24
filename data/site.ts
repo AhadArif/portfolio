@@ -25,7 +25,7 @@ const siteData: SiteData = {
   subtitle: "I'm a Developer creating beautiful, scalable digital experiences",
   description:
     "I transform complex problems into simple, beautiful and intuitive designs. When I'm not coding or designing, I play games and do what I love. I have been doing web design and development for over 15 years, while constantly learning to improve my techniques and developing new skills that will help me realize any of your ideas.",
-  email: "ahad01arif@gmail.com",
+  email: "ahad95arif@gmail.com",
   phone: "+91",
   location: "Bangalore, India",
   social: {

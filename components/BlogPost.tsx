@@ -48,7 +48,7 @@ export default function BlogPost({ postId, onBackToBlog, onViewPost }: BlogPostP
   };
 
   return (
-    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30 dark:from-gray-900 dark:via-blue-900/10 dark:to-purple-900/10 relative overflow-hidden">
+    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 -left-32 w-96 h-96 bg-blue-300/20 dark:bg-blue-600/10 rounded-full blur-3xl"></div>
@@ -156,8 +156,8 @@ export default function BlogPost({ postId, onBackToBlog, onViewPost }: BlogPostP
         {/* Post Content */}
         <article className="prose prose-lg dark:prose-invert max-w-none">
           {/* Excerpt as Quote */}
-          <div className="bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-lg mb-12">
-            <p className="text-xl text-gray-700 dark:text-gray-300 italic border-l-4 border-blue-500 dark:border-blue-400 pl-6">
+          <div className="bg-gray-50 dark:bg-gray-900/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-lg mb-12">
+            <p className="text-xl text-gray-800 dark:text-gray-300 italic border-l-4 border-blue-500 dark:border-blue-400 pl-6">
               {post.excerpt}
             </p>
           </div>
@@ -165,7 +165,7 @@ export default function BlogPost({ postId, onBackToBlog, onViewPost }: BlogPostP
           {/* Introduction */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Introduction</h2>
-            <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-800 dark:text-gray-300 leading-relaxed">
               {post.content.introduction}
             </p>
           </div>
@@ -178,7 +178,7 @@ export default function BlogPost({ postId, onBackToBlog, onViewPost }: BlogPostP
               </svg>
               The Challenge
             </h2>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-gray-800 dark:text-gray-300 leading-relaxed">
               {post.content.challenge}
             </p>
           </div>
@@ -197,7 +197,7 @@ export default function BlogPost({ postId, onBackToBlog, onViewPost }: BlogPostP
                   <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full flex items-center justify-center font-bold">
                     {index + 1}
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed pt-1">
+                  <p className="text-gray-800 dark:text-gray-300 leading-relaxed pt-1">
                     {item}
                   </p>
                 </div>
@@ -217,13 +217,13 @@ export default function BlogPost({ postId, onBackToBlog, onViewPost }: BlogPostP
               {post.content.results.map((result, index) => (
                 <div
                   key={index}
-                  className="p-5 bg-white dark:bg-gray-800 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
+                  className="p-5 bg-gray-50 dark:bg-gray-800 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
                 >
                   <div className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="text-gray-800 dark:text-gray-300 leading-relaxed">
                       {result}
                     </p>
                   </div>
@@ -236,13 +236,13 @@ export default function BlogPost({ postId, onBackToBlog, onViewPost }: BlogPostP
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Key Learnings</h2>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
+              <li className="flex items-start gap-3 text-gray-800 dark:text-gray-300">
                 <svg className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span>The importance of planning and setting clear goals before starting development</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
+              <li className="flex items-start gap-3 text-gray-800 dark:text-gray-300">
                 <svg className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>

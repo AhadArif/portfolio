@@ -34,7 +34,7 @@ export default function Hero() {
             </p>
             
             <p className="text-gray-600 dark:text-gray-400">
-              I specialize in building exceptional websites, applications, and digital products that make a difference. As a passionate developer, I'm eager to learn and contribute to meaningful projects.
+              I specialize in creativity, design, building exceptional websites, applications, and digital products that make a difference. As a passionate developer, I'm eager to learn and contribute to meaningful projects.
             </p>
 
             {/* Social Links */}
@@ -80,11 +80,11 @@ export default function Hero() {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 ring-4 ring-blue-500/20 dark:ring-purple-500/20">
               <Image
-                src="/images/hero-image.jpg"
+                src="/images/hero-image.png"
                 alt={siteData.name}
                 width={600}
                 height={600}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-[center_20%]"
                 priority
               />
             </div>
@@ -97,7 +97,7 @@ export default function Hero() {
             <div className="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 backdrop-blur-sm">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm text-gray-700 dark:text-gray-300">Available to work</span>
+                <span className="text-sm text-gray-700 dark:text-gray-300">Currently working · Open to Roles</span>
               </div>
             </div>
           </div>

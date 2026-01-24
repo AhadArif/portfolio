@@ -22,10 +22,10 @@ const services: Service[] = [
   },
   {
     id: "web-dev",
-    icon: "smartphone",
-    title: "Full Website Development",
+    icon: "globe",
+    title: "AI-Assisted Development",
     description:
-      "Developing complete websites from structure and styling to logic and deployment.",
+    "Using AI tools to speed up development, improve code quality, and design better user experiences.",
   },
   {
     id: "performance",
