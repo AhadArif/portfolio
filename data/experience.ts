@@ -1,4 +1,4 @@
-export interface Experience {
+interface Experience {
   id: string;
   company: string;
   position: string;
@@ -12,36 +12,36 @@ export interface Experience {
 const experience: Experience[] = [
   {
     id: "freelance",
-    company: "Freelance Developer (HMN)",
-    position: "Full Stack Developer",
+    company: "Freelance — WEMASY",
+    position: "Junior Developer • Web Master • Designer",
     period: "Jan 2024 - Present",
     startDate: "Jan 2024",
     endDate: "Present",
     description:
-      "Working with diverse clients to build custom web applications, e-commerce platforms, and design systems. Specializing in React, Next.js, and modern frontend architecture. Led projects from concept to deployment with excellent client satisfaction.",
-    tags: ["React", "Next.js", "Node.js", "AWS"],
+      "Worked as a junior developer and web master managing website development, maintenance, and UI design for client projects. Built responsive pages, improved performance, and supported SEO-friendly structures while collaborating with content and marketing teams.",
+    tags: ["Web Development", "Design", "SEO", "Maintenance", "UI"],
   },
   {
     id: "web-intern",
-    company: "Web Development Intern",
-    position: "Frontend Developer",
-    period: "May 2023 - Dec 2023",
-    startDate: "May 2023",
-    endDate: "Dec 2023",
+    company: "Clevertize",
+    position: "Digital Marketing & Content Executive",
+    period: "Oct 2023 - Mar 2024",
+    startDate: "Oct 2023",
+    endDate: "Mar 2024",
     description:
-      "Built and maintained user websites, responsive web pages, and front-end functionality. Worked closely with senior developers and designers to create seamless user experiences and improve site performance by 40%.",
-    tags: ["HTML", "CSS", "JavaScript", "React"],
+      "Handled content writing, copywriting, social media management, and SEO optimization for multiple brands. Created engaging posts and website content, improved search visibility, and supported campaign execution across platforms.",
+    tags: ["Content Writing", "Copywriting", "Social Media", "SEO", "Marketing"],
   },
   {
     id: "ui-ux",
-    company: "UI/UX Design Architect",
-    position: "UI/UX Designer",
-    period: "Feb 2021 - Apr 2023",
-    startDate: "Feb 2021",
+    company: "Freelance",
+    position: "Digital Marketing Specialist",
+    period: "Feb 2023 - Apr 2023",
+    startDate: "Feb 2023",
     endDate: "Apr 2023",
     description:
-      "Conducted user research and workflow for seamless projects. Collaborated with developers to transform wireframes into functional interfaces. Led design sprints and implemented accessibility best practices across all products.",
-    tags: ["Figma", "Sketch", "Prototyping", "User Research"],
+      "Provided freelance digital marketing services including website optimization, SEO setup, brand positioning, and basic user research. Helped businesses improve online presence and audience engagement through strategic content and website improvements.",
+    tags: ["SEO", "Websites", "Branding", "User Research"],
   },
 ];
 

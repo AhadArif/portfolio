@@ -50,7 +50,7 @@ const blogs: BlogPost[] = [
 
   {
     id: 2,
-    title: "Designing with AI: How Ideation Tools Transformed My Creative Process",
+    title: "Designing with AI: How some Tools Helped in  My Creative Process",
     excerpt: "Using AI, Pinterest, and visual references to create better design posts and creative content.",
     category: "Design",
     date: "January 8, 2026",
@@ -91,12 +91,7 @@ author: "Abdul Ahad Arif",
 content: {
 introduction: "In mid-January, while casually searching for an SSD upgrade, I noticed a sudden spike in 1TB SSD and RAM prices over just ten days. Prices jumped from around ₹13,000 to over ₹20,000, coinciding with a surge of viral AI content online.",
 challenge: "Hardware prices usually change gradually, but this rapid increase left many buyers, including myself, puzzled since there was no official supply shortage.",
-approach: [
-"Monitored prices daily across multiple online stores",
-"Tracked trending AI-related videos and social media content",
-"Observed discussions and recommendations from influencers",
-"Noted user sentiment and buying patterns in forums and comments"
-],
+approach: [], 
 results: [],
 conclusion: "This observation revealed how quickly digital content can influence real-world tech markets. It highlighted the growing power of online trends in shaping consumer behavior and pricing dynamics."
 }
@@ -129,7 +124,7 @@ conclusion: "This observation revealed how quickly digital content can influence
 
   {
     id: 5,
-    title: "Essential Design Tools I Rely On for Creative Work",
+    title: "Some Design Tools that Really Do Wonders For Creative Work",
     excerpt: "A look at the tools that shape my design workflow — from ideation to final visuals.",
     category: "Design",
     date: "December 22, 2025",
