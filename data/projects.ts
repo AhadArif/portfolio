@@ -5,28 +5,32 @@ export interface Project {
   image: string;
   tags: string[];
   link?: string;
+  liveUrl?: string;
+  repoUrl?: string;
 }
 
 const projects: Project[] = [
   {
-    id: "ecommerce",
-    title: "E-Commerce Platform",
+    id: "website",
+    title: "EATOPIA Socials Restarant Reservation Website",
     description:
-      "Full-stack e-commerce platform with payment integration, inventory management, and admin dashboard.",
+      "Full-stack dynamic website, with AI discovery, Google API's and Backend for Reservations.",
     image: "/images/project-1.jpg",
-    tags: ["React", "Node.js", "MongoDB"],
+    tags: ["TypeScript","Next.js","React.js","Node.js", "Firebase"],
+    
   },
   {
-    id: "agency",
-    title: "Creative Agency Website",
+    id: "Website",
+    title: "Portfolio Website",
     description:
-      "Modern, animated website for a creative agency with smooth transitions and interactive elements.",
+      "Modern, Simple Portfolio Website showcasing static pages with dynamic live.",
     image: "/images/project-2.jpg",
-    tags: ["Next.js", "GSAP", "Tailwind"],
+    tags: ["JavaScript", "TypeScript", "Tailwind", "Firebase"],
+    link: "https://AbdulAhadArif.vercel.app/",
   },
   {
-    id: "mobile-app",
-    title: "Mobile Banking App",
+    id: "Solar Tracking Smart Irrigation System",
+    title: "IOT & Devices",
     description:
       "Secure mobile banking application with biometric authentication and real-time transaction tracking.",
     image: "/images/project-3.jpg",

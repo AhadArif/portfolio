@@ -4,7 +4,6 @@ export interface SiteData {
   subtitle: string;
   description: string;
   email: string;
-  phone: string;
   location: string;
   social: {
     github?: string;
@@ -26,7 +25,6 @@ const siteData: SiteData = {
   description:
     "I transform complex problems into simple, beautiful and intuitive designs. When I'm not coding or designing, I play games and do what I love. I have been doing web design and development for over 15 years, while constantly learning to improve my techniques and developing new skills that will help me realize any of your ideas.",
   email: "ahad95arif@gmail.com",
-  phone: "+91",
   location: "Bangalore, India",
   social: {
     github: "https://github.com/AhadArif",

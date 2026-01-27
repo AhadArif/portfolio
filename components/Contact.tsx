@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import siteData from "@/data/site";
+import { saveContactForm } from "@/lib/contactService";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -10,12 +11,76 @@ export default function Contact() {
     subject: "",
     message: "",
   });
+  
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [toast, setToast] = useState<{
+    show: boolean;
+    type: 'success' | 'error';
+    message: string;
+  }>({ show: false, type: 'success', message: '' });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Auto-hide toast after 5 seconds
+  useEffect(() => {
+    if (toast.show) {
+      const timer = setTimeout(() => {
+        setToast({ ...toast, show: false });
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [toast.show]);
+
+  const showToast = (type: 'success' | 'error', message: string) => {
+    setToast({ show: true, type, message });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! I'll get back to you soon.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    
+    // Validate required fields
+    if (!formData.name.trim()) {
+      showToast('error', 'Please enter your name');
+      return;
+    }
+    
+    if (!formData.email.trim()) {
+      showToast('error', 'Please enter your email');
+      return;
+    }
+    
+    if (!formData.message.trim()) {
+      showToast('error', 'Please enter a message');
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      showToast('error', 'Please enter a valid email address');
+      return;
+    }
+    
+    // Start submitting
+    setIsSubmitting(true);
+
+    try {
+      // Call the Firebase function to save data
+      const result = await saveContactForm(formData);
+      
+      if (result.success) {
+        // Success! Clear the form and show success toast
+        showToast('success', 'Message sent successfully! I\'ll get back to you soon.');
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        // Error occurred
+        showToast('error', result.message);
+      }
+    } catch (error) {
+      // Unexpected error
+      showToast('error', 'Failed to send message. Please try again.');
+    } finally {
+      // Stop loading state
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -35,7 +100,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Have a project in mind? Let's discuss how we can work together
+            Have a project in mind or want to contact me? Drop a message below
           </p>
         </div>
 
@@ -163,7 +228,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-950 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
-                    placeholder="John Doe"
+                    placeholder="Name"
                   />
                 </div>
                 <div>
@@ -181,7 +246,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-950 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
-                    placeholder="john@example.com"
+                    placeholder="Email"
                   />
                 </div>
               </div>
@@ -221,18 +286,66 @@ export default function Contact() {
                   placeholder="Tell me about your project..."
                 />
               </div>
+
               <button
                 type="submit"
-                className="w-full px-8 py-3 bg-blue-600 text-white rounded-lg font-medium inline-flex items-center justify-center gap-2 send-message-hover"
+                disabled={isSubmitting}
+                className={`w-full px-8 py-3 rounded-lg font-medium inline-flex items-center justify-center gap-2 send-message-hover transition-all ${
+                  isSubmitting 
+                    ? 'bg-gray-400 cursor-not-allowed' 
+                    : 'bg-blue-600 text-white'
+                }`}
               >
-                Send Message
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
+                {isSubmitting ? (
+                  <>
+                    <svg className="animate-spin h-5 w-5" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    Send Message
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </>
+                )}
               </button>
             </form>
           </div>
         </div>
+
+        {/* Toast Notification */}
+        {toast.show && (
+          <div className="fixed bottom-8 right-8 z-50 animate-toast">
+            <div className={`flex items-center gap-3 px-6 py-4 rounded-lg shadow-2xl backdrop-blur-sm border-2 ${
+              toast.type === 'success'
+                ? 'bg-green-50 dark:bg-green-900/90 border-green-500 text-green-800 dark:text-green-100'
+                : 'bg-red-50 dark:bg-red-900/90 border-red-500 text-red-800 dark:text-red-100'
+            }`}>
+              {toast.type === 'success' ? (
+                <svg className="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              )}
+              <span className="font-medium">{toast.message}</span>
+              <button
+                onClick={() => setToast({ ...toast, show: false })}
+                className="ml-2 hover:opacity-70 transition-opacity"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
