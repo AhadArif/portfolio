@@ -10,10 +10,11 @@ export interface BlogPost {
   author: string;
   content: {
     introduction: string;
-    challenge: string;
-    approach: string[];
-    results: string[];
-    conclusion: string;
+    body?: string;
+    challenge?: string;
+    approach?: string[];
+    results?: string[];
+    conclusion?: string;
   };
 }
 
@@ -50,7 +51,7 @@ const blogs: BlogPost[] = [
 
   {
     id: 2,
-    title: "Designing with AI: How some Tools Helped in  My Creative Process",
+    title: "Using AI for Designing: How some Tools Helped in  My Creative Process",
     excerpt: "Using AI, Pinterest, and visual references to create better design posts and creative content.",
     category: "Design",
     date: "January 8, 2026",
@@ -68,6 +69,10 @@ const blogs: BlogPost[] = [
         "Focused on using AI as a creative assistant, not a replacement",
         "Iterated on typography, spacing, and composition"
       ],
+      body:`While AI helped with initial ideas, most of the creative work still came from manual effort and personal judgment. Small details like spacing, color balance, typography, and composition were refined through trial, observation, and repeated adjustments. This hands-on process helped shape each design beyond automated suggestions.
+
+Simple creative imagery and original ideas often made the biggest difference. By trusting my own instincts and experimenting with visual elements, I learned that creativity grows strongest when technology supports the process, but does not replace thoughtful human design.
+`,
       results: [
         "Improved consistency in design output",
         "Reduced time spent on early ideation phases",
@@ -90,8 +95,14 @@ tags: ["Hardware", "AI", "Market Trends"],
 author: "Abdul Ahad Arif",
 content: {
 introduction: "In mid-January, while casually searching for an SSD upgrade, I noticed a sudden spike in 1TB SSD and RAM prices over just ten days. Prices jumped from around ₹13,000 to over ₹20,000, coinciding with a surge of viral AI content online.",
-challenge: "Hardware prices usually change gradually, but this rapid increase left many buyers, including myself, puzzled since there was no official supply shortage.",
-approach: [], 
+body: `Hardware prices are usually driven by slow moving factors such as manufacturing capacity, supply chains, and long term demand. 
+Sudden spikes are rare and often linked to major disruptions. Yet in early 2026 storage and memory prices rose sharply within days without any official shortage announcements or production delays. What stood out was the timing, The surge coincided with a flood of AI related content across social media platforms. 
+
+Influencers showcased new AI tools, local models, and system upgrades, repeatedly emphasizing the need for faster storage and higher memory. As excitement spread thousands of users rushed to upgrade their systems almost simultaneously. Retailers reacted quickly. Stock warnings appeared availability tightened and prices adjusted upward in response to the sudden demand. No factories slowed down no shipments were blocked but content alone had shifted buyer behavior at scale. This moment revealed how modern markets are no longer shaped only by suppliers and manufacturers. Today creators trends and viral narratives can influence purchasing patterns just as strongly as traditional economic forces. 
+
+In a digital economy attention itself has become a powerful driver of price.`,
+//challenge: "Hardware prices usually change gradually, but this rapid increase left many buyers, including myself, puzzled since there was no official supply shortage.", 
+approach:[],
 results: [],
 conclusion: "This observation revealed how quickly digital content can influence real-world tech markets. It highlighted the growing power of online trends in shaping consumer behavior and pricing dynamics."
 }
@@ -135,13 +146,7 @@ conclusion: "This observation revealed how quickly digital content can influence
     content: {
       introduction: "Great design is often powered by great tools. Over time, I’ve built a small but effective toolkit that helps me move smoothly from ideas to polished visuals.",
       challenge: "With so many tools available, choosing the right ones without overcomplicating the workflow can be difficult.",
-      approach: [
-        "Used Figma for layout and interface design",
-        "Used Canva for quick social visuals",
-        "Explored Gemini for creative ideation",
-        "Tested Framer for interactive prototypes",
-        "Built a workflow focused on speed and clarity"
-      ],
+      approach: [],
       results: [
         "Faster design iterations",
         "More consistent visual quality",

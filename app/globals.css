@@ -182,3 +182,28 @@ html {
 .animate-toast {
   animation: toast 3s ease-in-out forwards;
 }
+
+/* Slide in from right animation for toast notification */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%) translateY(-50%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0) translateY(-50%);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(0) translateY(-50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%) translateY(-50%);
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 3s ease-in-out forwards;
+}
+
