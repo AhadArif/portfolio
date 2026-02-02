@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import CursorGlow from "@/components/CursorGlow";
 import siteData from "@/data/site";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
@@ -57,6 +58,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${dmSans.className} antialiased`}>
         <ThemeProvider>
+          <CursorGlow />
           {children}
         </ThemeProvider>
       </body>

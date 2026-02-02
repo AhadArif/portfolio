@@ -17,6 +17,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  cursor: none;
 }
 
 @layer utilities {
@@ -27,6 +28,11 @@ body {
 
 html {
   scroll-behavior: smooth;
+  cursor: none;
+}
+
+* {
+  cursor: none !important;
 }
 
 /* Smooth scroll with easing for comfort */
@@ -148,6 +154,21 @@ html {
   border-color: rgba(59, 130, 246, 0.6);
 }
 
+/* Form input hover and focus effects */
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  border-color: rgba(139, 92, 246, 0.5) !important;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: rgba(59, 130, 246, 0.7) !important;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3), 0 0 40px rgba(139, 92, 246, 0.2);
+}
+
 /* Hover effect for send message button */
 .send-message-hover {
   transition: all 0.3s ease;
@@ -157,6 +178,13 @@ html {
   transform: translateY(-2px);
   box-shadow: 0 0 25px rgba(59, 130, 246, 0.5), 0 0 50px rgba(139, 92, 246, 0.3);
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+}
+
+/* Hero social icons glow on hover in dark mode */
+.dark #home a[href*="github"]:hover,
+.dark #home a[href*="linkedin"]:hover,
+.dark #home a[href^="mailto:"]:hover {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.6), 0 0 40px rgba(59, 130, 246, 0.4);
 }
 
 /* Toast notification animation */

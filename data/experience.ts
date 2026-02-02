@@ -11,25 +11,25 @@ interface Experience {
 
 const experience: Experience[] = [
   {
-    id: "freelance",
+    id: "Internship",
     company: "Freelance — WEMASY",
     position: "Junior Developer • Web Master • Designer",
-    period: "Jan 2024 - Present",
-    startDate: "Jan 2024",
+    period: "Nov 2025 - Present",
+    startDate: "Nov 2025",
     endDate: "Present",
     description:
-      "Worked as a junior developer and web master managing website development, maintenance, and UI design for client projects. Built responsive pages, improved performance, and supported SEO-friendly structures while collaborating with content and marketing teams.",
+      "Currently working as a junior developer and web master managing website development, maintenance, and UI design for client projects. Built responsive pages, improved performance, and supported SEO-friendly structures while collaborating with content and marketing teams.",
     tags: ["Web Development", "Design", "SEO", "Maintenance", "UI"],
   },
   {
-    id: "web-intern",
+    id: "Intern",
     company: "Clevertize",
     position: "Digital Marketing & Content Executive",
     period: "Oct 2023 - Mar 2024",
     startDate: "Oct 2023",
     endDate: "Mar 2024",
     description:
-      "Handled content writing, copywriting, social media management, and SEO optimization for multiple brands. Created engaging posts and website content, improved search visibility, and supported campaign execution across platforms.",
+      "Handled content writing, copywriting, social media management, and SEO optimization for websites and multiple brands. Created engaging posts and website content, improved search visibility, and supported campaign execution across platforms.",
     tags: ["Content Writing", "Copywriting", "Social Media", "SEO", "Marketing"],
   },
   {
