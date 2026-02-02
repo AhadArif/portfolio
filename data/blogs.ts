@@ -249,20 +249,37 @@ conclusion: "This observation revealed how quickly digital content can influence
 
   {
     id: 9,
-    title: "Coming Soon",
-    excerpt: "New insights and experiences are on the way.",
-    category: "Insights",
-    date: "Coming Soon",
-    readTime: "—",
+    title: "Foundations of UX Design: Key Learnings from Google's Course",
+    excerpt: "Exploring user-centered design principles, accessibility, and the essential skills that shape exceptional user experiences.",
+    category: "Achievements",
+    date: "July 2023",
+    readTime: "6 min read",
     image: "/images/blog-9.png",
-    tags: [],
+    tags: ["UX Design", "Google Certificate", "User Research", "Accessibility"],
     author: "Abdul Ahad Arif",
     content: {
-      introduction: "A new story will be shared here soon.",
-      challenge: "—",
-      approach: [],
-      results: [],
-      conclusion: "Stay tuned for upcoming content."
+      introduction: "Completing Google's Foundations of UX Design course was a transformative experience that introduced me to the core principles of creating user-centered digital products. This foundational course covered everything from understanding user needs to building accessible and equitable designs that work for everyone.",
+      challenge: "As someone transitioning into UX design, understanding the breadth of responsibilities and skills required was initially overwhelming. The challenge was to grasp not just the design tools, but the mindset and processes that drive effective user experience work.",
+      approach: [
+        "Studied user-centered design principles and how to prioritize user needs throughout the design process",
+        "Learned the complete UX design process from research to prototyping",
+        "Explored accessibility guidelines and equity-focused design practices",
+        "Understood the role of design sprints and how they accelerate problem-solving",
+        "Practiced creating personas, wireframes, and mockups",
+        "Developed skills in user research, usability testing, and design thinking",
+        "Learned sprint planning and retrospectives for iterative improvements",
+        "Gained hands-on experience with UI design and prototyping tools"
+      ],
+      results: [
+        "Gained comprehensive understanding of entry-level UX designer responsibilities",
+        "Learned to collaborate effectively with cross-functional teams",
+        "Mastered foundational concepts including accessibility and equity in design",
+        "Developed practical skills in wireframing, mockups, and user interface design",
+        "Understood the importance of design sprints in UX workflow",
+        "Built a strong foundation in user research and usability principles",
+        "Earned Google UX Design certificate"
+      ],
+      conclusion: "This course laid a solid foundation for my journey in UX design. It taught me that great design isn't just about aesthetics—it's about understanding people, solving real problems, and creating inclusive experiences that work for everyone. The skills I gained in user research, wireframing, and design thinking continue to influence how I approach every project."
     }
   },
 
@@ -270,7 +287,7 @@ conclusion: "This observation revealed how quickly digital content can influence
     id: 10,
     title: "Coming Soon",
     excerpt: "More projects and reflections will be added shortly.",
-    category: "Insights",
+    category: "Cooking",
     date: "Coming Soon",
     readTime: "—",
     image: "/images/blog-10.png",
@@ -283,7 +300,26 @@ conclusion: "This observation revealed how quickly digital content can influence
       results: [],
       conclusion: "More updates coming soon."
     }
+  },
+{
+    id: 11,
+    title: "Coming Soon",
+    excerpt: "More projects and reflections will be added shortly.",
+    category: "Cooking",
+    date: "Coming Soon",
+    readTime: "—",
+    image: "/images/blog-11.png",
+    tags: [],
+    author: "Abdul Ahad Arif",
+    content: {
+      introduction: "Another upcoming post will appear here soon.",
+      challenge: "—",
+      approach: [],
+      results: [],
+      conclusion: "More updates coming soon."
+    }
   }
+
 ];
 
 export default blogs;

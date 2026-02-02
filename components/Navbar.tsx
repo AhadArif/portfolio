@@ -60,8 +60,10 @@ export default function Navbar({ onNavigateHome, onNavigateToBlog, currentView =
           <button
             onClick={(e) => {
               e.preventDefault();
-              if (onNavigateHome) {
+              if (currentView !== 'home' && onNavigateHome) {
                 onNavigateHome();
+              } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
               }
             }}
             className="text-2xl font-bold text-gray-900 dark:text-white transition-colors cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 flex-shrink-0 min-w-[200px]"

@@ -2,10 +2,11 @@ import siteData from "@/data/site";
 
 interface FooterProps {
   onNavigateHome?: () => void;
+  onNavigateToBlog?: () => void;
   currentView?: 'home' | 'blog-list' | 'blog-post';
 }
 
-export default function Footer({ onNavigateHome, currentView = 'home' }: FooterProps = {}) {
+export default function Footer({ onNavigateHome, onNavigateToBlog, currentView = 'home' }: FooterProps = {}) {
   const currentYear = new Date().getFullYear();
 
   const handleSectionClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
@@ -21,13 +22,53 @@ export default function Footer({ onNavigateHome, currentView = 'home' }: FooterP
     }
   };
 
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (currentView !== 'home' && onNavigateHome) {
+      onNavigateHome();
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handleBlogClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (onNavigateToBlog) {
+      onNavigateToBlog();
+    }
+  };
+
+  const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (currentView !== 'home' && onNavigateHome) {
+      onNavigateHome();
+      setTimeout(() => {
+        const section = document.getElementById('contact');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const section = document.getElementById('contact');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <footer className="bg-gray-900 dark:bg-black text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* About Section */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">{siteData.name.split(" ")[0]}.</h3>
+            <a 
+              href="#home" 
+              onClick={handleLogoClick}
+              className="text-2xl font-bold mb-4 inline-block hover:text-blue-400 transition-colors cursor-pointer"
+            >
+              {siteData.name.split(" ")[0]}.
+            </a>
             <p className="text-gray-400 text-sm mb-6 leading-relaxed">
               {siteData.subtitle}
             </p>
@@ -187,9 +228,9 @@ export default function Footer({ onNavigateHome, currentView = 'home' }: FooterP
             <div className="flex gap-6">
               <a href="#" className="hover:text-white transition-colors">Resume</a>
               <span>•</span>
-              <a href="#" className="hover:text-white transition-colors">Blog</a>
+              <a href="#blog" onClick={handleBlogClick} className="hover:text-white transition-colors cursor-pointer">Blog</a>
               <span>•</span>
-              <a href="#" className="hover:text-white transition-colors">Say Hi 👋</a>
+              <a href="#contact" onClick={handleContactClick} className="hover:text-white transition-colors cursor-pointer">Say Hi 👋</a>
             </div>
           </div>
         </div>

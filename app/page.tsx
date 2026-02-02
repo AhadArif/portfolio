@@ -61,7 +61,7 @@ export default function Home() {
             onBackToHome={backToHome}
           />
         </main>
-        <Footer onNavigateHome={backToHome} currentView={currentView} />
+        <Footer onNavigateHome={backToHome} onNavigateToBlog={showBlogList} currentView={currentView} />
       </>
     );
   }
@@ -81,7 +81,7 @@ export default function Home() {
             onViewPost={showBlogPost}
           />
         </main>
-        <Footer onNavigateHome={backToHome} currentView={currentView} />
+        <Footer onNavigateHome={backToHome} onNavigateToBlog={showBlogList} currentView={currentView} />
       </>
     );
   }
@@ -104,7 +104,7 @@ export default function Home() {
         <CTA />
         <Contact />
       </main>
-      <Footer onNavigateHome={backToHome} currentView={currentView} />
+      <Footer onNavigateHome={backToHome} onNavigateToBlog={showBlogList} currentView={currentView} />
     </>
   );
 }

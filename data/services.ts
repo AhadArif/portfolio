@@ -25,7 +25,7 @@ const services: Service[] = [
     icon: "globe",
     title: "AI-Assisted Development",
     description:
-    "Using AI tools to speed up development, improve code quality, and design better user experiences.",
+    "Combining practical development skills with AI-assisted workflows to deliver clean, thoughtful, and user-focused products.",
   },
   {
     id: "performance",

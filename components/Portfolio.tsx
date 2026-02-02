@@ -41,7 +41,10 @@ export default function Portfolio() {
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className={project.id === "ASP.NET Project" 
+                      ? "object-contain bg-white dark:bg-gray-900 group-hover:scale-110 transition-transform duration-500" 
+                      : "object-cover group-hover:scale-110 transition-transform duration-500"
+                    }
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-4 right-4 flex gap-2">

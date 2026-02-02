@@ -12,7 +12,7 @@ export interface Project {
 const projects: Project[] = [
   {
     id: "website",
-    title: "EATOPIA Socials Restarant Reservation Website",
+    title: "EATOPIA Socials Restaurant Reservation Website",
     description:
       "Full-stack dynamic website, with AI discovery, Google API's and Backend for Reservations.",
     image: "/images/project-1.jpg",
@@ -53,7 +53,7 @@ const projects: Project[] = [
       "This project is in working progress! To know more, visit the GitHub.",
     image: "/images/project-5.jpg",
     tags: ["Coming Soon","AI"],
-    link: "github.com/AhadArif",
+    link: "https://github.com/AhadArif",
   },
   {
     id: "ASP.NET Project",
