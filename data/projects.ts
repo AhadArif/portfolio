@@ -46,15 +46,15 @@ const projects: Project[] = [
     tags: ["Vue.js", "React.js", "Javascript","SQL Workbench"],
     link: "https://github.com/AhadArif/New-Web-React?tab=readme-ov-file"
   },
-  // {
-  //   id: "ai-based-project",
-  //   title: "Coming Soon",
-  //   description:
-  //     "This project is in working progress! To know more, visit the GitHub.",
-  //   image: "/images/project-5.jpg",
-  //   tags: ["Coming Soon","AI"],
-  //   link: "https://github.com/AhadArif",
-  // },
+  {
+    id: "ai-based-project",
+    title: "Coming Soon",
+    description:
+      "This project is in working progress! To know more, visit the GitHub.",
+    image: "/images/project-5.jpg",
+    tags: ["Coming Soon","AI"],
+    link: "https://github.com/AhadArif",
+  },
   {
     id: "ASP.NET Project",
     title: "ASP.NET Web Forms Portfolio",
