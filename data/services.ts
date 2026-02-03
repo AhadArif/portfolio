@@ -16,7 +16,7 @@ const services: Service[] = [
   {
     id: "frontend",
     icon: "code",
-    title: "Frontend Engineering",
+    title: "Frontend Development",
     description:
       "Building responsive, interactive interfaces with React, VUE, Next.js, and modern frontend tools.",
   },

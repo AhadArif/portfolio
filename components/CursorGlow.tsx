@@ -8,7 +8,7 @@ export default function CursorGlow() {
   useEffect(() => {
     const move = (e: MouseEvent) => {
       if (cursorRef.current) {
-        cursorRef.current.style.transform = `translate(${e.clientX - 8}px, ${e.clientY - 8}px)`;
+        cursorRef.current.style.transform = `translate(${e.clientX - 6}px, ${e.clientY - 6}px)`;
       }
     };
 
@@ -22,7 +22,7 @@ export default function CursorGlow() {
       className="pointer-events-none fixed top-0 left-0 z-[9999]"
       style={{ willChange: 'transform' }}
     >
-      <div className="relative w-4 h-4">
+      <div className="relative w-3 h-3">
         {/* Core cursor */}
         <div className="absolute inset-0 rounded-full bg-purple-600 dark:bg-white" />
 

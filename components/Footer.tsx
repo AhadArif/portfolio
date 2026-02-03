@@ -224,7 +224,7 @@ export default function Footer({ onNavigateHome, onNavigateToBlog, currentView =
           </div>
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-            <p>© {currentYear} {siteData.name}. • Built with ❤️ and ☕</p>
+            <p>© {currentYear} {siteData.name}. • Built with ❤️, 😪 , and ☕</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-white transition-colors">Resume</a>
               <span>•</span>
