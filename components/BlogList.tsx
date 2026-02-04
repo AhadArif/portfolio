@@ -87,7 +87,7 @@ export default function BlogList({ onViewPost, onBackToHome, initialCategory = "
             All Posts
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Explore My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Blog</span>
+            Check Out My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Blogs</span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             {filteredBlogs.length} {filteredBlogs.length === 1 ? 'post' : 'posts'} {selectedCategory !== "All" ? `in ${selectedCategory}` : ''}
