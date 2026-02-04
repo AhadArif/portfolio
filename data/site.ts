@@ -23,7 +23,7 @@ const siteData: SiteData = {
   title: "Creative Developer + Designer",
   subtitle: "I'm a Developer creating beautiful, scalable digital experiences",
   description:
-    "I transform complex problems into simple, beautiful and intuitive designs. When I'm not coding or designing, I play games and do what I love. I have been doing web design and development for over 15 years, while constantly learning to improve my techniques and developing new skills that will help me realize any of your ideas.",
+    "I'm a multidisciplinary freelancer working across web development, coding, design, digital marketing, quality assurance, and validation. A motivated computing graduate with a strong interest in cloud computing, modern web technologies, databases, and AI, I transform complex problems into simple, beautiful, and intuitive digital experiences. I bring a strong problem-solving mindset, adaptability, and creativity to every project, with a focus on quality, reliability, and clear communication. When I'm not coding or designing, I'm into gaming, video editing, photography, and exploring what I love.",
   email: "ahad95arif@gmail.com",
   location: "Bangalore, India",
   social: {
