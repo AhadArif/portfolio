@@ -13,6 +13,7 @@ import Footer from "@/components/Footer";
 import BlogHome from "@/components/BlogHome";
 import BlogList from "@/components/BlogList";
 import BlogPost from "@/components/BlogPost";
+import ChatBot from "@/components/ChatBot";
 
 type ViewType = 'home' | 'blog-list' | 'blog-post';
 
@@ -62,6 +63,7 @@ export default function Home() {
           />
         </main>
         <Footer onNavigateHome={backToHome} onNavigateToBlog={showBlogList} currentView={currentView} />
+        <ChatBot />
       </>
     );
   }
@@ -82,6 +84,7 @@ export default function Home() {
           />
         </main>
         <Footer onNavigateHome={backToHome} onNavigateToBlog={showBlogList} currentView={currentView} />
+        <ChatBot />
       </>
     );
   }
@@ -105,6 +108,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer onNavigateHome={backToHome} onNavigateToBlog={showBlogList} currentView={currentView} />
+      <ChatBot />
     </>
   );
 }
