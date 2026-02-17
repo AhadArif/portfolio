@@ -1,6 +1,6 @@
 # 🚀 Modern Portfolio Website
 
-A sleek, fully responsive personal portfolio built with **Next.js 15**, **Tailwind CSS**, and **TypeScript**.
+A sleek personalised, fully responsive personal portfolio built with **Next.js 15**, **Tailwind CSS**, and **TypeScript**.
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
 ![React](https://img.shields.io/badge/React-18-blue?style=flat-square&logo=react)
