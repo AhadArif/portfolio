@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import siteData from "@/data/site";
 
 export default function Hero() {
@@ -73,6 +74,15 @@ export default function Hero() {
               >
                 Contact Me
               </a>
+              <Link
+                href="/portfolio"
+                className="bg-transparent text-blue-700 dark:text-blue-300 px-8 py-3 rounded-lg border-2 border-blue-200 dark:border-blue-800 hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center gap-2"
+              >
+                Portfolio Links
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
             </div>
           </div>
 
@@ -80,7 +90,7 @@ export default function Hero() {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 ring-4 ring-blue-500/20 dark:ring-purple-500/20">
               <Image
-                src="/images/hero-image.png"
+                src="/images/hero-ahad-pix.png"
                 alt={siteData.name}
                 width={600}
                 height={600}

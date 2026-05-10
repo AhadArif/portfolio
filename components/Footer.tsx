@@ -103,6 +103,12 @@ export default function Footer({ onNavigateHome, onNavigateToBlog, currentView =
                 </a>
               </li>
               <li>
+                <a href="/portfolio" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2 group cursor-pointer">
+                  <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-blue-400 transition-colors"></span>
+                  Portfolio Links
+                </a>
+              </li>
+              <li>
                 <a href="#portfolio" onClick={(e) => handleSectionClick(e, 'portfolio')} className="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-2 group cursor-pointer">
                   <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-blue-400 transition-colors"></span>
                   My Work

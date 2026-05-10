@@ -12,36 +12,36 @@ interface Experience {
 const experience: Experience[] = [
   {
     id: "Internship",
+    company: "St Joseph's University",
+    position: "SEO & Analytics Intern",
+    period: "Nov 2025 - Feb 2026",
+    startDate: "Nov 2025",
+    endDate: "Feb 2026",
+    description:
+      "Reviewed the website and recommended practical SEO and performance improvements. Added targeted keywords, meta tags, titles, and descriptions, connected Google Analytics, analysed engagement and traffic data, and refined content to improve search visibility.",
+    tags: ["Search Engine Optimization", "Google Analytics", "Meta Tags", "Keyword Research", "Performance", "Content Strategy"],
+  },
+  {
+    id: "wemasy",
     company: "Freelance — WEMASY",
-    position: "Junior Developer • Web Master • Designer",
+    position: "Content & Design Associate",
     period: "Nov 2025 - Present",
     startDate: "Nov 2025",
     endDate: "Present",
     description:
-      "Currently working as a junior developer and web master managing website development, maintenance, and UI design for client projects. Built responsive pages, improved performance, and supported SEO-friendly structures while collaborating with content and marketing teams.",
-    tags: ["Web Development", "Design", "SEO", "Maintenance", "UI"],
+      "Created content and design assets for web and marketing deliverables, shaped page layouts, and supported visual consistency across client-facing materials. Worked closely on content presentation, creative direction, and brand-aligned updates.",
+    tags: ["Content Design", "Web Design", "Visual Branding", "Layouts", "UI", "Creatives"],
   },
   {
-    id: "Intern",
+    id: "clevertize",
     company: "Clevertize",
-    position: "Digital Marketing & Content Executive",
+    position: "Digital Marketing, Content & Design Executive",
     period: "Oct 2023 - Mar 2024",
     startDate: "Oct 2023",
     endDate: "Mar 2024",
     description:
-      "Handled content writing, copywriting, social media management, and SEO optimization for websites and multiple brands. Created engaging posts and website content, improved search visibility, and supported campaign execution across platforms.",
-    tags: ["Content Writing", "Copywriting", "Social Media", "SEO", "Marketing"],
-  },
-  {
-    id: "ui-ux",
-    company: "Freelance",
-    position: "Digital Marketing Specialist",
-    period: "Feb 2023 - Apr 2023",
-    startDate: "Feb 2023",
-    endDate: "Apr 2023",
-    description:
-      "Provided freelance digital marketing services including website optimization, SEO setup, brand positioning, and basic user research. Helped businesses improve online presence and audience engagement through strategic content and website improvements.",
-    tags: ["SEO", "Websites", "Branding", "User Research"],
+      "Handled content writing, copywriting, social media management, and design-focused marketing work for websites and multiple brands. Created engaging posts, campaign visuals, and website content while improving search visibility and supporting cross-platform execution.",
+    tags: ["Content Writing", "Copywriting", "Social Media", "Design", "Marketing", "SEO"],
   },
 ];
 
