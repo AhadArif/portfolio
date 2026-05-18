@@ -25,7 +25,7 @@ const experience: Experience[] = [
     id: "wemasy",
     company: "Freelance — WEMASY",
     position: "Content & Design Associate",
-    period: "Nov 2025 - March 2026",
+    period: "Nov 2025 - Present",
     startDate: "Nov 2025",
     endDate: "Present",
     description:
