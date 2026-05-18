@@ -25,11 +25,11 @@ const experience: Experience[] = [
     id: "wemasy",
     company: "Freelance — WEMASY",
     position: "Content & Design Associate",
-    period: "Nov 2025 - Present",
+    period: "Nov 2025 - March 2026",
     startDate: "Nov 2025",
     endDate: "Present",
     description:
-      "Created content and design assets for web and marketing deliverables, shaped page layouts, and supported visual consistency across client-facing materials. Worked closely on content presentation, creative direction, and brand-aligned updates.",
+      "Created content and design assets for web and marketing deliverables, shaped page layouts, and supported visual consistency across client-facing materials. Built and shipped 4 tools and implemented iframes for chatbots, ai writer tool, kanban trello based board tool, social media tool with 3 features (await, respond, write) etc.,  Worked closely on content presentation, creative direction, and brand-aligned updates.",
     tags: ["Content Design", "Web Design", "Visual Branding", "Layouts", "UI", "Creatives"],
   },
   {
