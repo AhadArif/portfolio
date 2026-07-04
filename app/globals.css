@@ -235,3 +235,29 @@ textarea:focus {
   animation: slideInRight 3s ease-in-out forwards;
 }
 
+/* ── Admin dashboard cursor override ────────────────────────────────────────
+   The main site hides the system cursor in favour of CursorGlow.
+   Admin pages don't use CursorGlow, so we restore normal cursors there.     */
+.admin-page,
+.admin-page * {
+  cursor: auto !important;
+}
+.admin-page button,
+.admin-page a,
+.admin-page [role="button"],
+.admin-page select {
+  cursor: pointer !important;
+}
+.admin-page input,
+.admin-page textarea {
+  cursor: text !important;
+}
+
+/* Admin fade-in modal animation */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out forwards;
+}

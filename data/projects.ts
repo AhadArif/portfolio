@@ -11,7 +11,7 @@ export interface Project {
 
 const projects: Project[] = [
   {
-    id: "website",
+    id: "eatopia-website",
     title: "EATOPIA Socials Restaurant Reservation Website",
     description:
       "Full-stack dynamic website, with AI discovery, Google API's and Backend for Reservations.",
@@ -19,9 +19,39 @@ const projects: Project[] = [
     tags: ["TypeScript","Next.js","React.js","Node.js", "Firebase"],
     link: "https://eatopiaa.vercel.app/",    
   },
+
   {
-    id: "Website",
-    title: "Portfolio Website",
+    id: "wishing-wand-website",
+    title: "The Wising Wand Website",
+    description:
+      "Full-stack dynamic website, for event management and bookings.",
+    image: "/images/TheWishingWand.png",
+    tags: ["Java Script","Next.js","CSS","HTML","React.js","Node.js", "Firebase"],
+    link: "https://thewishingwand.in/",    
+  },
+
+  {
+    id: "juxoria-website",
+    title: "Services Website - Juxoria",
+    description:
+      "This project is a services website for Juxoria, a company that provides various services to its clients.",
+    image: "/images/",
+    tags: ["Coming Soon","AI"],
+    link: "https://github.com/AhadArif",
+  },
+
+{
+    id: "RolePilot Ai Resume Builder",
+    title: "AI Resume Builder",
+    description:
+      "Role Pilot is a modern AI powered resume builder, a React Native mobile application that allows users to create professional resumes with ease. It leverages AI technology to provide personalized resume suggestions and formatting options.",
+    image: "/images/RolePilot.jpg",
+    tags: ["Tailwind", "React Native", "EXPO","AI", "Next.js"],
+    link: "https://github.com/AhadArif/RolePilot"
+  },
+  {
+    id: "portfolio-website",
+    title: "My Portfolio Website",
     description:
       "Modern, Simple Portfolio Website showcasing static pages with dynamic live.",
     image: "/images/project-2.jpg",
@@ -46,6 +76,7 @@ const projects: Project[] = [
     tags: ["Vue.js", "React.js", "Javascript","SQL Workbench"],
     link: "https://github.com/AhadArif/New-Web-React?tab=readme-ov-file"
   },
+
   {
     id: "ai-based-project",
     title: "Coming Soon",

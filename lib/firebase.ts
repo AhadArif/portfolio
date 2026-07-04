@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp, getApps } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 import { getAnalytics, Analytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
@@ -21,6 +22,9 @@ const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0
 // Initialize Firestore database
 const db = getFirestore(app);
 
+// Initialize Firebase Auth
+const auth = getAuth(app);
+
 // Initialize Analytics (only in browser environment)
 let analytics: Analytics | null = null;
 if (typeof window !== 'undefined') {
@@ -28,4 +32,4 @@ if (typeof window !== 'undefined') {
 }
 
 // Export the database and analytics
-export { db, analytics };
+export { db, auth, analytics };
