@@ -19,17 +19,17 @@ const portfolioLinks = [
     image: "/images/blog-4.png",
     tag: "Content",
   },
-  {
-    title: "Design Portfolio",
-    subtitle: "Wemasy design and visual work",
-    description:
-      "Design-focused portfolio materials and visual assets created for Wemasy.",
-    href: "https://drive.google.com/drive/folders/1AO0jWwqclp7fJ9zT5xN_J0Ig_ydZqS7G?usp=drive_link",
-    image: encodeURI(
-      "/images/Have you noticed how some websites feel easier to manage than others___It_s rarely about having fewer tools._It_s about how clearly everything works togethe(.jpg"
-    ),
-    tag: "Design",
-  },
+  // {
+  //   title: "Design Portfolio",
+  //   subtitle: "Wemasy design and visual work",
+  //   description:
+  //     "Design-focused portfolio materials and visual assets created for Wemasy.",
+  //   href: "https://drive.google.com/drive/folders/1AO0jWwqclp7fJ9zT5xN_J0Ig_ydZqS7G?usp=drive_link",
+  //   image: encodeURI(
+  //     "/images/Have you noticed how some websites feel easier to manage than others___It_s rarely about having fewer tools._It_s about how clearly everything works togethe(.jpg"
+  //   ),
+  //   tag: "Design",
+  // },
 ];
 
 export default function PortfolioPage() {
@@ -51,9 +51,7 @@ export default function PortfolioPage() {
                 Content and design work, collected in one place.
               </h1>
               <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
-                Use these links to view my selected content, blog, and design folders on Google Drive.
-                If you want the site to feature direct file embeds later, I can wire those in once the
-                individual public file links are available.
+                Use these links to view my selected content and blog folders on Google Drive.
               </p>
             </div>
             <div className="flex gap-3">
@@ -107,11 +105,6 @@ export default function PortfolioPage() {
                 </div>
               </article>
             ))}
-          </div>
-
-          <div className="mt-10 rounded-2xl border border-white/10 bg-white/5 p-6 text-sm text-slate-300 backdrop-blur">
-            These links are the fastest way to review the work right now. If you send direct public file URLs for the
-            images you want featured, I can turn this into a richer gallery page with actual embeds instead of folder links.
           </div>
         </div>
       </section>

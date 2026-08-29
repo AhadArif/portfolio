@@ -5,12 +5,12 @@ export default function CTA() {
       <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600"></div>
       <div className="absolute inset-0 opacity-30 animate-gradient-pulse">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
       {/* Floating Decorative Elements */}
       <div className="absolute top-10 left-10 w-20 h-20 border-4 border-white/20 rounded-lg rotate-12 animate-pulse"></div>
-      <div className="absolute bottom-10 right-10 w-16 h-16 border-4 border-white/20 rounded-full animate-pulse" style={{animationDelay: '500ms'}}></div>
+      <div className="absolute bottom-10 right-10 w-16 h-16 border-4 border-white/20 rounded-full animate-pulse" style={{ animationDelay: '500ms' }}></div>
       <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-white/10 rounded-lg -rotate-12 backdrop-blur-sm"></div>
       <div className="absolute top-1/3 right-1/3 w-8 h-8 bg-white/10 rounded-full backdrop-blur-sm"></div>
 
@@ -73,15 +73,15 @@ export default function CTA() {
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-16 border-t border-white/30">
             <div className="backdrop-blur-sm bg-white/10 p-6 sm:p-8 rounded-xl border border-white/20 shadow-xl hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl sm:text-5xl font-bold text-white mb-2 drop-shadow-lg">1+</div>
-              <div className="text-white/80 text-sm sm:text-base">Year Learning</div>
+              <div className="text-4xl sm:text-5xl font-bold text-white mb-2 drop-shadow-lg">2+</div>
+              <div className="text-white/80 text-sm sm:text-base">Experience</div>
             </div>
             <div className="backdrop-blur-sm bg-white/10 p-6 sm:p-8 rounded-xl border border-white/20 shadow-xl hover:scale-105 transition-transform duration-300">
               <div className="text-4xl sm:text-5xl font-bold text-white mb-2 drop-shadow-lg">10+</div>
               <div className="text-white/80 text-sm sm:text-base">Projects Built</div>
             </div>
             <div className="backdrop-blur-sm bg-white/10 p-6 sm:p-8 rounded-xl border border-white/20 shadow-xl hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl sm:text-5xl font-bold text-white mb-2 drop-shadow-lg">3</div>
+              <div className="text-4xl sm:text-5xl font-bold text-white mb-2 drop-shadow-lg">2</div>
               <div className="text-white/80 text-sm sm:text-base">Internships</div>
             </div>
           </div>

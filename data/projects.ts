@@ -16,8 +16,8 @@ const projects: Project[] = [
     description:
       "Full-stack dynamic website, with AI discovery, Google API's and Backend for Reservations.",
     image: "/images/project-1.jpg",
-    tags: ["TypeScript","Next.js","React.js","Node.js", "Firebase"],
-    link: "https://eatopiaa.vercel.app/",    
+    tags: ["TypeScript", "Next.js", "React.js", "Node.js", "Firebase"],
+    link: "https://eatopiaa.vercel.app/",
   },
 
   {
@@ -26,27 +26,27 @@ const projects: Project[] = [
     description:
       "Full-stack dynamic website, for event management and bookings.",
     image: "/images/TheWishingWand.png",
-    tags: ["Java Script","Next.js","CSS","HTML","React.js","Node.js", "Firebase"],
-    link: "https://thewishingwand.in/",    
+    tags: ["Java Script", "Next.js", "CSS", "HTML", "React.js", "Node.js", "Firebase"],
+    link: "https://thewishingwand.in/",
   },
 
   {
     id: "juxoria-website",
-    title: "Services Website - Juxoria",
+    title: "Services Website - Juxaria",
     description:
-      "This project is a services website for Juxoria, a company that provides various services to its clients.",
-    image: "/images/",
-    tags: ["Coming Soon","AI"],
-    link: "https://github.com/AhadArif",
+      "This project is a services website for Juxaria, a company that provides various services to its clients.",
+    image: "/images/whitelogo.png",
+    tags: ["Portfolio"],
+    link: "https://www.juxaria.in",
   },
 
-{
+  {
     id: "RolePilot Ai Resume Builder",
     title: "AI Resume Builder",
     description:
       "Role Pilot is a modern AI powered resume builder, a React Native mobile application that allows users to create professional resumes with ease. It leverages AI technology to provide personalized resume suggestions and formatting options.",
     image: "/images/RolePilot.jpg",
-    tags: ["Tailwind", "React Native", "EXPO","AI", "Next.js"],
+    tags: ["Tailwind", "React Native", "EXPO", "AI", "Next.js"],
     link: "https://github.com/AhadArif/RolePilot"
   },
   {
@@ -64,8 +64,8 @@ const projects: Project[] = [
     description:
       "ESP-32 based solar tracking smart irrigation system, with LED display for detection and soil moisture sensors. Solar panels with LDR sensors for tracking light and rotating to detection with servo motor.",
     image: "/images/project-3.jpg",
-    tags: ["C#","ESP-32","IoT"],
-    link:"https://www.linkedin.com/posts/ahad-arif-b1b832262_iot-mca-studentprojects-activity-7420011090190921728-iUQ2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECNBscBj2nZ0LQLk556Qv1v97pDoqvbGwQ", 
+    tags: ["C#", "ESP-32", "IoT"],
+    link: "https://www.linkedin.com/posts/ahad-arif-b1b832262_iot-mca-studentprojects-activity-7420011090190921728-iUQ2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECNBscBj2nZ0LQLk556Qv1v97pDoqvbGwQ",
   },
   {
     id: "React Photography Website",
@@ -73,7 +73,7 @@ const projects: Project[] = [
     description:
       "Urbex Photography website built with React, featuring buy-able image galleries, webpages, and for urban exploration enthusiasts.",
     image: "/images/project-4.jpg",
-    tags: ["Vue.js", "React.js", "Javascript","SQL Workbench"],
+    tags: ["Vue.js", "React.js", "Javascript", "SQL Workbench"],
     link: "https://github.com/AhadArif/New-Web-React?tab=readme-ov-file"
   },
 
@@ -83,7 +83,7 @@ const projects: Project[] = [
     description:
       "This project is in working progress! To know more, visit the GitHub.",
     image: "/images/project-5.jpg",
-    tags: ["Coming Soon","AI"],
+    tags: ["Coming Soon", "AI"],
     link: "https://github.com/AhadArif",
   },
   {
