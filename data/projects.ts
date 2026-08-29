@@ -34,7 +34,7 @@ const projects: Project[] = [
     id: "juxoria-website",
     title: "Services Website - Juxaria",
     description:
-      "This project is a services website for Juxaria, a company that provides various services to its clients. I contributed as a freelancer to some of their client projects",
+      "This project is a services website for Juxaria, a company that provides various services to its clients. I contributed as a freelancer to their website and client projects",
     image: "/images/whitelogo.png",
     tags: ["Portfolio"],
     link: "https://www.juxaria.in",
